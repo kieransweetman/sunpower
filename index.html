@@ -26,91 +26,112 @@
 			defer
 		></script>
 
+		<link rel="stylesheet" href="style.css" />
+		<script src="index.js" defer></script>
+		<title>Page d'accueil</title>
+	</head>
+	<body>
+		<div class="bg-brand-secondary">
+			<header class="container" style="height: 10vh">
+				<nav class="navbar">
+					<a class="navbar-brand" href="index.html">
+						<img src="media/logo_mobile.png" width="50" />
+					</a>
 
-   
-		
-
-    <link rel="stylesheet" href="style.css" />
-    <script src="index.js" defer></script>
-    <title>Page d'accueil</title>
-  </head>
-  <body>
-    
-    <div class="bg-brand-secondary">
-		<header class="container">
-      <nav class="navbar">
-        <a class="navbar-brand" href="index.html">
-					<img src="media/logo_mobile.png" width="50" />
-          </a>
-          
 					<i class="bi bi-list text-brand-primary fs-1" id="burgerMenuIcon"></i>
-          
+				</nav>
+			</header>
+		</div>
+		<!-- Burger menu (hidden at start) -->
+		<div id="burgerExpanded" class="d-none">
+			<ul class="container list-unstyled text-center text-shadow d-flex flex-column justify-content-evenly" style="height: 85vh">
+				<li class="fs-4"><a href="" class="text-uppercase text-brand-primary">Ombrières solaires</a></li>
+				<li class=""><hr class="text-brand-ternary border-5 opacity-75" /></li>
+				<li class="fs-4"><a href="" class="text-uppercase text-brand-primary">Produits</a></li>
+				<li class="fs-4"><a href="" class="text-uppercase text-brand-primary">Carte interactive</a></li>
+				<li class="fs-4"><a href="" class="text-uppercase text-brand-primary">Activités</a></li>
+				<li class="fs-4"><a href="" class="text-uppercase text-brand-primary">Partenaires</a></li>
+				<li class=""><hr class="text-brand-ternary border-5 opacity-75" /></li>
+				<li class="fs-4"><a href="" class="text-uppercase text-brand-primary">Nous contacter</a></li>
+				<li class="fs-4"><a href="" class="text-uppercase text-brand-primary">À propos</a></li>
+			</ul>
+		</div>
+		<!-- End burger menu -->
+		<main id="main" class="container">
+			<div class="d-flex flex-column justify-content-evenly" style="height: 90vh">
+				<p class="fs-2 fw-bold text-uppercase text-center text-shadow py-4 mx-3">
+					L'énergie <span class="text-brand-ternary">verte</span> & <span class="text-brand-ternary">renouvelable</span> à portée de main
+				</p>
+				<div class="row">
+					<p class="mb-4 col-10 fs-8">
+						<span class="text-brand-primary fw-bold fs-7">Nous concevons</span
+						><span class="paragraph-brand">
+							et commercialisons des panneaux solaires à haut rendement. Fort de plusieurs années de conception, nous proposons aujourd’hui
+							notre fer de lance :</span
+						>
+					</p>
+				</div>
+				<div class="row">
+					<p class="text-center mb-4 col-10 offset-1 fs-8">
+						<span class="text-brand-primary fw-bold fs-7">L’ombrière solaire</span><br /><span class="">
+							Avec ce bijou de technologie, n’importe quelle véhicule électrique pourra recharger ses batteries avec une
+							<span class="text-brand-ternary">énergie verte et non polluante</span> tout en jouant le rôle d’abri.</span
+						>
+					</p>
+				</div>
+				<div class="row">
+					<p class="text-end col-10 offset-2 fs-8">
+						<span class="text-brand-primary fw-bold fs-7">Chaque borne</span
+						><span class="paragraph-brand">
+							est installée en fonction des normes et contraintes du terrain et/ou du client. Pour en savoir plus n’hésitez pas à utiliser
+							notre
+							<a href="" class="text-brand-primary">formulaire de contact</a>.
+						</span>
+					</p>
+				</div>
+				<div class="container-fluid d-flex justify-content-center align-items-center mt-5">
+					<a href=""
+						><div
+							class="border rounded-circle d-flex justify-content-center align-items-center bg-brand-secondary text-brand-primary fw-bold"
+							style="height: 45px; width: 45px"
+						>
+							<i class="fs-1 bi bi-chevron-double-down"></i></div
+					></a>
 				</div>
 			</div>
-      </nav>
-      
-		</header>
-    </div>
-    <!-- Burger menu (hidden at start) -->
-    <div id="burgerExpanded" class="d-none">
-        <ul class="container list-unstyled text-center ">
-          <li class="p-4 mt-4 fs-4"><a href="" class="text-uppercase text-brand-primary">Ombrières solaires</a></li>
-          <li class="p-2"><hr class="text-brand-ternary border-5 opacity-75"></li>
-          <li class="p-4  fs-4"><a href="" class="text-uppercase text-brand-primary">Produits</a></li>
-          <li class="p-4  fs-4"><a href="" class="text-uppercase text-brand-primary">Carte interactive</a></li>
-          <li class="p-4  fs-4"><a href="" class="text-uppercase text-brand-primary">Activités</a></li>
-          <li class="p-4  fs-4"><a href="" class="text-uppercase text-brand-primary">Partenaires</a></li>
-          <li class="p-2"><hr class="text-brand-ternary border-5 opacity-75"></li>
-          <li class="p-4  fs-4"><a href="" class="text-uppercase text-brand-primary">Nous contacter</a></li>
-          <li class="p-4  fs-4"><a href="" class="text-uppercase text-brand-primary">À propos</a></li>
-        </ul>
-      </div>
-      <!-- End burger menu -->
-		<main id="main"><p>test</p></main>
+		</main>
 
-    <footer class="container-fluid p-3">
-      <div id="logo__footer" class="row col-10 rounded mx-auto mt-5">
-        <img
-          class="row mx-auto d-block"
-          src="./media/logo.png"
-          alt="Sunpower logo"
-        />
-      </div>
-      <div id="site_map__footer" class="row p-1 mt-5">
-        <ul class="col list-unstyled">
-          <li class="mb-3"><a href="">Ombrières solaires</a></li>
-          <li class="mb-3"><a href="">Carte interactive</a></li>
-          <li class="mb-3"><a href="">Produits</a></li>
-          <li class="mb-3"><a href="">Activités</a></li>
-          <li class="mb-3"><a href="">Partenaires</a></li>
-        </ul>
-        <ul class="col list-unstyled">
-          <li class="mb-3"><a href="">À propos</a></li>
-          <li class="mb-3"><a href="">Mentions légales</a></li>
-          <li class="mb-3"><a href="">CGV</a></li>
-          <li class="mb-3"><a href="">Plan du Site</a></li>
-        </ul>
-      </div>
-      <div class="container-fluid text-center">
-        <a href=""> Nous contacter</a>
-      </div>
-      <hr />
-      <div
-        id="social__footer"
-        class="container-fluid d-flex justify-content-center"
-        style="height: 5em"
-      >
-        <i class="bi bi-facebook col-3 fs-1 text-center blue"></i
-        ><i class="bi bi-linkedin col-3 fs-1 text-center blue"></i
-        ><i class="bi bi-twitter col-3 fs-1 text-center blue"></i>
-      </div>
+		<footer class="container-fluid p-3">
+			<div id="logo__footer" class="row col-10 rounded mx-auto mt-5">
+				<img class="row mx-auto d-block" src="./media/logo.png" alt="Sunpower logo" />
+			</div>
+			<div id="site_map__footer" class="row p-1 mt-5">
+				<ul class="col list-unstyled">
+					<li class="mb-3"><a href="">Ombrières solaires</a></li>
+					<li class="mb-3"><a href="">Carte interactive</a></li>
+					<li class="mb-3"><a href="">Produits</a></li>
+					<li class="mb-3"><a href="">Activités</a></li>
+					<li class="mb-3"><a href="">Partenaires</a></li>
+				</ul>
+				<ul class="col list-unstyled">
+					<li class="mb-3"><a href="">À propos</a></li>
+					<li class="mb-3"><a href="">Mentions légales</a></li>
+					<li class="mb-3"><a href="">CGV</a></li>
+					<li class="mb-3"><a href="">Plan du Site</a></li>
+				</ul>
+			</div>
+			<div class="container-fluid text-center">
+				<a href=""> Nous contacter</a>
+			</div>
+			<hr />
+			<div id="social__footer" class="container-fluid d-flex justify-content-center" style="height: 5em">
+				<i class="bi bi-facebook col-3 fs-1 text-center blue"></i><i class="bi bi-linkedin col-3 fs-1 text-center blue"></i
+				><i class="bi bi-twitter col-3 fs-1 text-center blue"></i>
+			</div>
 
-      <div id="copyright" class="container text-center">
-        <p>
-          <span>&copy;</span> 2022 Sunpower - Produits & Activités autour des
-          énergies renouvelables
-        </p>
-      </div>
-    </footer>
-  </body>
+			<div id="copyright" class="container text-center">
+				<p><span>&copy;</span> 2022 Sunpower - Produits & Activités autour des énergies renouvelables</p>
+			</div>
+		</footer>
+	</body>
 </html>
