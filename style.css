@@ -28,6 +28,10 @@
 	text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
+main {
+	background-color: #d7d7d7;
+}
+
 @font-face {
 	font-family: Space;
 	src: url(./media/fonts/SpaceMono-Regular.ttf);
@@ -49,4 +53,25 @@ footer {
 
 .fs-7 {
 	font-size: 16px;
+}
+
+.map-border {
+	background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' stroke='black' stroke-width='4' stroke-dasharray='6%2c 14' stroke-dashoffset='0' stroke-linecap='square'/%3e%3c/svg%3e");
+}
+
+main ul li::before {
+	content: '•';
+	color: #358c84;
+	font-size: 18px;
+	font-weight: bold;
+	vertical-align: sub;
+	margin-right: 4px;
+}
+
+.fs-0 {
+	font-size: 48px;
+}
+
+#burgerMenuIcon {
+	cursor: pointer;
 }
