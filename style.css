@@ -23,3 +23,20 @@
 .bg-brand-ternary {
 	background-color: #97bf04;
 }
+
+
+@font-face {
+    font-family: Space;
+    src: url(./media/fonts/SpaceMono-Regular.ttf);
+}
+body{
+    font-family: 'Space';
+}
+footer{
+    background-color: #D9BF71;
+}
+
+.blue {
+    color: blue;
+}
+
