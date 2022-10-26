@@ -31,8 +31,37 @@
 		<title>Page d'accueil</title>
 	</head>
 	<body>
-		<header></header>
-		<main></main>
+    <div class="bg-brand-secondary">
+		<header class="container ">
+      <nav class="navbar">
+        <a class="navbar-brand" href="index.html">
+					<img src="media/logo_mobile.png" width="50" />
+          </a>
+          
+					<i class="bi bi-list text-brand-primary fs-1" id="burgerMenuIcon"></i>
+          
+				</div>
+			</div>
+      </nav>
+      
+		</header>
+    </div>
+    <!-- Burger menu (hidden at start) -->
+    <div id="burgerExpanded" class="d-none">
+        <ul class="container list-unstyled text-center ">
+          <li class="p-4 mt-4 fs-4"><a href="" class="text-uppercase text-brand-primary">Ombrières solaires</a></li>
+          <li class="p-2"><hr class="text-brand-ternary border-5 opacity-75"></li>
+          <li class="p-4  fs-4"><a href="" class="text-uppercase text-brand-primary">Produits</a></li>
+          <li class="p-4  fs-4"><a href="" class="text-uppercase text-brand-primary">Carte interactive</a></li>
+          <li class="p-4  fs-4"><a href="" class="text-uppercase text-brand-primary">Activités</a></li>
+          <li class="p-4  fs-4"><a href="" class="text-uppercase text-brand-primary">Partenaires</a></li>
+          <li class="p-2"><hr class="text-brand-ternary border-5 opacity-75"></li>
+          <li class="p-4  fs-4"><a href="" class="text-uppercase text-brand-primary">Nous contacter</a></li>
+          <li class="p-4  fs-4"><a href="" class="text-uppercase text-brand-primary">À propos</a></li>
+        </ul>
+      </div>
+      <!-- End burger menu -->
+		<main id="main"><p>test</p></main>
 		<footer></footer>
 	</body>
 </html>
