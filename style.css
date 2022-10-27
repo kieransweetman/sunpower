@@ -95,17 +95,12 @@ footer {
 }
 
 /* contact pages */
-#contact_menu{
+#contact_menu {
 	height: 85vh;
 }
 
 #contact_links a:hover {
-	
 	background-color: #d9bf71;
-	
 }
 #contact_links a:focus {
-	
-
-	
 }
