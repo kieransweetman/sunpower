@@ -4,7 +4,7 @@ document.body.insertAdjacentHTML(
 			<!-- Navbar -->
 			<div class="container">
 				<nav class="navbar">
-					<a class="navbar-brand" href="index.html">
+					<a class="navbar-brand" href="../index.html">
 						<img src="../media/logo_mobile.png" width="50" alt="Logo" />
 					</a>
 
