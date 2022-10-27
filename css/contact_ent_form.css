@@ -1,0 +1,110 @@
+@charset "UTF-8";
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css");
+@font-face {
+  font-family: Space;
+  src: url(../media/fonts/SpaceMono-Regular.ttf);
+}
+body {
+  font-family: "Space";
+  background-color: #D7D7D7;
+}
+
+main {
+  background-color: #d7d7d7;
+}
+
+footer {
+  background-color: #d9bf71;
+}
+
+/* Marker modifier */
+#main ul li::before {
+  content: "•";
+  color: #358c84;
+  font-size: 18px;
+  font-weight: bold;
+  vertical-align: sub;
+  margin-right: 4px;
+}
+
+/* Custom bootstrap-like classes */
+/* Colors  */
+.text-brand-primary {
+  color: #358c84;
+}
+
+.bg-brand-primary {
+  background-color: #358c84;
+}
+
+.text-brand-secondary {
+  color: #d9bf71;
+}
+
+.bg-brand-secondary {
+  background-color: #d9bf71;
+}
+
+.text-brand-ternary {
+  color: #97bf04;
+}
+
+.bg-brand-ternary {
+  background-color: #97bf04;
+}
+
+/* Effects */
+.text-shadow {
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+/* Font sizes */
+.fs-0 {
+  font-size: 48px;
+}
+
+.fs-7 {
+  font-size: 16px;
+}
+
+.fs-8 {
+  font-size: 11px;
+}
+
+.bg-brand-secondary_40 {
+  background-color: rgba(217, 191, 113, 0.4);
+}
+
+.text-brand-ternary {
+  color: #97bf04;
+}
+
+.bg-brand-ternary {
+  background-color: rgb(151, 191, 4);
+}
+
+.bg-brand-ternary_40 {
+  background-color: rgba(151, 191, 4, 0.4);
+}
+
+@font-face {
+  font-family: Space;
+  src: url(../media/fonts/SpaceMono-Regular.ttf);
+}
+.blue {
+  color: blue;
+}
+
+#ent_form_page {
+  height: 90vh;
+}
+
+#ent_form_desc::placeholder {
+  font-size: 12px;
+}
+
+.hide {
+  display: none;
+}
+
+/*# sourceMappingURL=contact_ent_form.css.map */
