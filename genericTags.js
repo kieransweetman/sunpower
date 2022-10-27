@@ -23,7 +23,7 @@ document.body.insertAdjacentHTML(
 					<a href="../pages/product.html" class="text-uppercase text-brand-primary">Produits</a>
 				</li>
 				<li class="fs-4">
-					<a href="" class="text-uppercase text-brand-primary">Carte interactive</a>
+					<a href="../pages/map.html" class="text-uppercase text-brand-primary">Carte interactive</a>
 				</li>
 				<li class="fs-4">
 					<a href="../pages/activities.html" class="text-uppercase text-brand-primary">Activités</a>
