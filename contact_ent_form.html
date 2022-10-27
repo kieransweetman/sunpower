@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta content="IE=edge" http-equiv="X-UA-Compatible"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+
+    <!-- bootstrap -->
+
+    <!-- icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css" rel="stylesheet"/>
+
+    <!-- css -->
+    <link
+            crossorigin="anonymous"
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+            integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+            rel="stylesheet"
+    />
+
+    <!-- js -->
+    <script
+            crossorigin="anonymous"
+            defer
+            integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+    ></script>
+
+
+    <link href="contact_ent_form.css" rel="stylesheet"/>
+    <script defer src="index.js"></script>
+    <title>Page d'accueil</title>
+</head>
+<body>
+
+<div class="bg-brand-secondary">
+    <header class="container">
+        <nav class="navbar">
+            <a class="navbar-brand" href="contact_ent_form.html">
+                <img src="./media/logo_mobile.png" width="50"/>
+            </a>
+
+            <i class="bi bi-list text-brand-primary fs-1" id="burgerMenuIcon"></i>
+
+</div>
+</div>
+</nav>
+
+</header>
+</div>
+<!-- Burger menu (hidden at start) -->
+<div class="d-none" id="burgerExpanded">
+    <ul class="container list-unstyled text-center ">
+        <li class="p-4 mt-4 fs-4"><a class="text-uppercase text-brand-primary" href="">Ombrières solaires</a></li>
+        <li class="p-2">
+            <hr class="text-brand-ternary border-5 opacity-75">
+        </li>
+        <li class="p-4  fs-4"><a class="text-uppercase text-brand-primary" href="">Produits</a></li>
+        <li class="p-4  fs-4"><a class="text-uppercase text-brand-primary" href="">Carte interactive</a></li>
+        <li class="p-4  fs-4"><a class="text-uppercase text-brand-primary" href="">Activités</a></li>
+        <li class="p-4  fs-4"><a class="text-uppercase text-brand-primary" href="">Partenaires</a></li>
+        <li class="p-2">
+            <hr class="text-brand-ternary border-5 opacity-75">
+        </li>
+        <li class="p-4  fs-4"><a class="text-uppercase text-brand-primary" href="">Nous contacter</a></li>
+        <li class="p-4  fs-4"><a class="text-uppercase text-brand-primary" href="">À propos</a></li>
+    </ul>
+</div>
+<!-- End burger menu -->
+<main id="main">
+    <div class="container" id="ent_first_form_page">
+        <div class="d-inline-flex align-items-center w-100 mb-4" id="ent_first_form_page_head">
+            <a class="position-absolute" href=""><img alt="" src="./media/svg/arrow_back.svg"></a>
+            <h1 class="mx-auto text-center text-brand-primary text-uppercase">Contact</h1>
+        </div>
+        <section class="d-flex flex-column mx-auto w-75">
+            <div class="bg-brand-secondary w-100 py-3 text-center mb-3 rounded-5 d-flex flex-row align-items-center"
+                 id="ent_first_form_page_rect_select">
+                <a class="text-decoration-none text-black bg-brand-primary py-3 px-4 mx-2 rounded-5" href="">1</a>
+                <hr class="w-25">
+                <a class="text-decoration-none text-black bg-brand-ternary_40 py-3 px-4 mx-2 rounded-5" href="">2</a>
+                <hr class="w-25">
+                <a class="text-decoration-none text-black bg-brand-ternary_40 py-3 px-4 mx-2 rounded-5" href="">3</a>
+            </div>
+            <div class="d-flex flex-column align-items-center mb-5"
+                 id="ent_first_form_page_form">
+                <form action="#" class="d-flex flex-column w-100 p-2 rounded-5 bg-brand-secondary p-4 mb-5">
+                    <label for="ent_form_name">Prénom</label><input class="bg-brand-secondary_40 border-top-0 border-start-0 border-end-0 border-dark" id="ent_form_name" name="name"
+                                                                    placeholder="ex. John"
+                                                                    type="text">
+                    <label for="ent_form_lastname">Nom</label><input class="bg-brand-secondary_40 border-top-0 border-start-0 border-end-0 border-dark" id="ent_form_lastname" name="name"
+                                                                     placeholder="ex. Wick"
+                                                                     type="text">
+                    <label for="ent_form_ent_name">Nom de l’entreprise</label><input class="bg-brand-secondary_40 border-top-0 border-start-0 border-end-0 border-dark" id="ent_form_ent_name"
+                                                                                     name="name"
+                                                                                     placeholder="ex. Baba Yaga Inc."
+                                                                                     type="text">
+                    <label for="ent_form_email">Email</label><input class="bg-brand-secondary_40 border-top-0 border-start-0 border-end-0 border-dark mb-4" id="ent_form_email" name="name"
+                                                                    placeholder="ex. john.doe@gmail.com"
+                                                                    type="text">
+                </form>
+                <a class="text-center" href="#"><img alt="" class="" src="./media/svg/next_button.svg"></a>
+            </div>
+        </section>
+    </div>
+</main>
+
+<footer class="container-fluid p-3">
+    <div class="row col-10 rounded mx-auto mt-5" id="logo__footer">
+        <img
+                alt="Sunpower logo"
+                class="row mx-auto d-block"
+                src="./media/logo.png"
+        />
+    </div>
+    <div class="row p-1 mt-5" id="site_map__footer">
+        <ul class="col list-unstyled">
+            <li class="mb-3"><a href="">Ombrières solaires</a></li>
+            <li class="mb-3"><a href="">Carte interactive</a></li>
+            <li class="mb-3"><a href="">Produits</a></li>
+            <li class="mb-3"><a href="">Activités</a></li>
+            <li class="mb-3"><a href="">Partenaires</a></li>
+        </ul>
+        <ul class="col list-unstyled">
+            <li class="mb-3"><a href="">À propos</a></li>
+            <li class="mb-3"><a href="">Mentions légales</a></li>
+            <li class="mb-3"><a href="">CGV</a></li>
+            <li class="mb-3"><a href="">Plan du Site</a></li>
+        </ul>
+    </div>
+    <div class="container-fluid text-center">
+        <a href=""> Nous contacter</a>
+    </div>
+    <hr/>
+    <div
+            class="container-fluid d-flex justify-content-center"
+            id="social__footer"
+            style="height: 5em"
+    >
+        <i class="bi bi-facebook col-3 fs-1 text-center blue"></i
+        ><i class="bi bi-linkedin col-3 fs-1 text-center blue"></i
+    ><i class="bi bi-twitter col-3 fs-1 text-center blue"></i>
+    </div>
+
+    <div class="container text-center" id="copyright">
+        <p>
+            <span>&copy;</span> 2022 Sunpower - Produits & Activités autour des
+            énergies renouvelables
+        </p>
+    </div>
+</footer>
+</body>
+</html>

@@ -1,0 +1,73 @@
+@import url('https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css');
+
+.text-brand-primary {
+  color: #358c84;
+}
+
+.bg-brand-primary {
+  background-color: #358c84;
+}
+
+.text-brand-secondary {
+  color: #d9bf71;
+}
+
+.bg-brand-secondary {
+  background-color: #d9bf71;
+}
+
+.bg-brand-secondary_40 {
+  background-color: rgba(217, 191, 113, 0.4);
+}
+
+.text-brand-ternary {
+  color: #97bf04;
+}
+
+.bg-brand-ternary {
+  background-color: rgb(151, 191, 4);
+}
+
+.bg-brand-ternary_40 {
+  background-color: rgb(151, 191, 4, 0.4);
+}
+
+
+@font-face {
+  font-family: Space;
+  src: url(./media/fonts/SpaceMono-Regular.ttf);
+}
+
+body {
+  font-family: 'Space';
+}
+
+footer {
+  background-color: #D9BF71;
+}
+
+.blue {
+  color: blue;
+}
+
+body {
+  background-color: #D7D7D7;
+}
+
+main {
+  height: 85vh;
+}
+
+footer{
+  height: 100vh;
+}
+
+#ent_first_form_page_form {
+  button {
+    background: none;
+  }
+
+  hr {
+    height: 1px;
+  }
+}
