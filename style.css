@@ -34,7 +34,7 @@ footer {
 }
 
 /* Marker modifier */
-main ul li::before {
+#main ul li::before {
 	content: '•';
 	color: #358c84;
 	font-size: 18px;
@@ -92,4 +92,20 @@ main ul li::before {
 
 .map-border {
 	background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' stroke='black' stroke-width='4' stroke-dasharray='6%2c 14' stroke-dashoffset='0' stroke-linecap='square'/%3e%3c/svg%3e");
+}
+
+/* contact pages */
+#contact_menu{
+	height: 85vh;
+}
+
+#contact_links a:hover {
+	
+	background-color: #d9bf71;
+	
+}
+#contact_links a:focus {
+	
+
+	
 }
