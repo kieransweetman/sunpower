@@ -1,4 +1,4 @@
-@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css");
+@import url('https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css');
 
 main {
 	background-color: #d7d7d7;
@@ -8,6 +8,24 @@ main {
 	font-family: Space;
 	src: url(./media/fonts/SpaceMono-Regular.ttf);
 }
+
+header {
+	height: 10vh;
+}
+
+#burgerExpanded ul {
+	height: 85vh;
+}
+
+#firstFrame {
+	height: 90vh;
+}
+
+#secondFrame,
+#thirdFrame {
+	height: 100vh;
+}
+
 body {
 	font-family: 'Space';
 }
@@ -29,27 +47,27 @@ main ul li::before {
 
 /* Colors  */
 .text-brand-primary {
-  color: #358c84;
+	color: #358c84;
 }
 
 .bg-brand-primary {
-  background-color: #358c84;
+	background-color: #358c84;
 }
 
 .text-brand-secondary {
-  color: #d9bf71;
+	color: #d9bf71;
 }
 
 .bg-brand-secondary {
-  background-color: #d9bf71;
+	background-color: #d9bf71;
 }
 
 .text-brand-ternary {
-  color: #97bf04;
+	color: #97bf04;
 }
 
 .bg-brand-ternary {
-  background-color: #97bf04;
+	background-color: #97bf04;
 }
 
 /* Effects */
