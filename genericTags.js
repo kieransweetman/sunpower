@@ -1,8 +1,8 @@
 document.body.insertAdjacentHTML(
 	'afterbegin',
-	`<div class="bg-brand-secondary">
+	`<header class="bg-brand-secondary">
 			<!-- Navbar -->
-			<header class="container">
+			<div class="container">
 				<nav class="navbar">
 					<a class="navbar-brand" href="index.html">
 						<img src="../media/logo_mobile.png" width="50" alt="Logo" />
