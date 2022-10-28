@@ -2,11 +2,13 @@
 // Permet d'ajouter autant de frame que désiré sans se soucier de dupliquer le code du bouton à chaque fois
 
 export default function scrollDown() {
-  const sections = document.querySelectorAll("section");
-  sections.forEach((section, i) => {
-    section.insertAdjacentHTML(
-      "beforeend",
-      `
+  let location = window.location.pathname;
+  if (location === "index.html") {
+    const sections = document.querySelectorAll("section");
+    sections.forEach((section, i) => {
+      section.insertAdjacentHTML(
+        "beforeend",
+        `
 				<div class="container-fluid d-flex justify-content-center align-items-center">
 					<div
 						class="border rounded-circle d-flex justify-content-center align-items-center bg-brand-secondary text-brand-primary fw-bold scrollButton"
@@ -24,7 +26,8 @@ export default function scrollDown() {
 						</div>
 					</div>
 				</div>`
-    );
-  });
+      );
+    });
+  }
 }
 export { scrollDown };

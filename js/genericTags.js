@@ -1,13 +1,18 @@
 export default function menu() {
+  let location = window.location.pathname;
   document.body.insertAdjacentHTML(
     "afterbegin",
     `<header class="bg-brand-secondary">
 					  <!-- Navbar -->
 					  <div class="container">
 						  <nav class="navbar">
-							  <a class="navbar-brand" href="./index.html">
+							  <a class="navbar-brand" href="${
+                  location === "index.html" ? "./" : "../"
+                }index.html">
 
-								  <img src="./media/logo_mobile.png" width="50" alt="mobile logo" />
+								  <img src="${
+                    location === "index.html" ? "./" : "../"
+                  }media/logo_mobile.png" width="50" alt="mobile logo" />
 							  </a>
 		  
 							  <i class="bi bi-list text-brand-primary fs-0" id="burgerMenuIcon"></i>
