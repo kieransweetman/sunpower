@@ -14,6 +14,10 @@ header {
 	background-color: #d9bf71;
 }
 
+#burgerMenuIcon {
+	cursor: pointer;
+}
+
 #burgerExpanded ul {
 	height: 85vh;
 }
@@ -134,5 +138,10 @@ footer {
 	#frame2,
 	#frame3 {
 		height: auto;
+	}
+
+	.fs-7,
+	.fs-8 {
+		font-size: 20px;
 	}
 }

@@ -5,7 +5,7 @@ document.body.insertAdjacentHTML(
 			<nav class="navbar navbar-expand-lg">
 				<div class="container-fluid">
 					<a class="navbar-brand" href="../index.html">
-						<img src="../media/logo_mobile.png" width="50" alt="Logo" />
+						<img src="../media/logo.png" width="70" alt="Logo" />
 					</a>
 					<ul class="navbar-nav container-fluid d-flex justify-content-evenly">
 						<li class="nav-item">
@@ -71,41 +71,57 @@ document.body.insertAdjacentHTML(
 		<!-- End burger menu -->`
 );
 
-// document.body.insertAdjacentHTML(
-// 	'beforeend',
-// 	`		<footer class="container-fluid p-3">
-// 			<div id="logo__footer" class="row col-10 rounded mx-auto mt-5">
-// 				<img class="row mx-auto d-block" src="../media/logo.png"  alt="Sunpower logo" />
-// 			</div>
-// 			<div id="site_map__footer" class="row p-1 mt-5">
-// 				<ul class="col list-unstyled">
-// 					<li class="mb-3 "><a href="../pages/product.html" class="text-brand-primary text-shadow">Ombrières solaires</a></li>
-// 					<li class="mb-3 "><a href="../pages/map.html" class="text-brand-primary text-shadow">Carte interactive</a></li>
-// 					<li class="mb-3 "><a href="../pages/product.html#products" class="text-brand-primary text-shadow">Produits</a></li>
-// 					<li class="mb-3 "><a href="../pages/activities.html" class="text-brand-primary text-shadow">Activités</a></li>
-// 				</ul>
-// 				<ul class="col list-unstyled">
-// 					<li class="mb-3 "><a href="../pages/propos.html" class="text-brand-primary text-shadow ">À propos</a></li>
-// 					<li class="mb-3 "><a href="../pages/legalmentions.html" class="text-brand-primary text-shadow ">Mentions légales</a></li>
-// 					<li class="mb-3 "><a href="../pages/cgv.html" class="text-brand-primary text-shadow ">CGV</a></li>
-// 					<li class="mb-3 "><a href="../pages/sitemap.html" class="text-brand-primary text-shadow ">Plan du Site</a></li>
-// 				</ul>
-// 			</div>
-// 			<div class="container-fluid text-center">
-// 				<a href="contact.html" class="text-brand-primary fs-4 fw-bold">Nous contacter</a>
-// 			</div>
-// 			<hr />
-// 			<div id="social__footer" class="container-fluid d-flex justify-content-center" style="height: 5em">
-// 				<i class="bi bi-facebook col-3 fs-1 text-center blue"></i
-// 				><i class="bi bi-linkedin col-3 fs-1 text-center blue"></i
-// 				><i class="bi bi-twitter col-3 fs-1 text-center blue"></i>
-// 			</div>
+document.body.insertAdjacentHTML(
+	'beforeend',
+	`
+		<footer class="container-fluid p-3">
+			<div class="d-lg-flex">
+				<div id="logo__footer" class="row col-10 col-md-6 col-lg-3 mx-auto mx-lg-0 mt-5">
+					<img class="mx-auto d-block img-fluid" src="../media/logo.png" alt="Sunpower logo" />
+				</div>
+				<div id="site_map__footer" class="row p-1 mt-5 d-lg-flex justify-content-lg-around col-lg-6">
+					<ul class="col list-unstyled text-md-center">
+						<li class="mb-3">
+							<a href="../pages/product.html" class="text-brand-primary text-shadow">Ombrières solaires</a>
+						</li>
+						<li class="mb-3">
+							<a href="../pages/map.html" class="text-brand-primary text-shadow">Carte interactive</a>
+						</li>
+						<li class="mb-3">
+							<a href="../pages/product.html#products" class="text-brand-primary text-shadow">Produits</a>
+						</li>
+						<li class="mb-3">
+							<a href="../pages/activities.html" class="text-brand-primary text-shadow">Activités</a>
+						</li>
+					</ul>
+					<ul class="col list-unstyled text-md-center">
+						<li class="mb-3"><a href="../pages/propos.html" class="text-brand-primary text-shadow">À propos</a></li>
+						<li class="mb-3">
+							<a href="../pages/legalmentions.html" class="text-brand-primary text-shadow">Mentions légales</a>
+						</li>
+						<li class="mb-3"><a href="../pages/cgv.html" class="text-brand-primary text-shadow">CGV</a></li>
+						<li class="mb-3">
+							<a href="../pages/sitemap.html" class="text-brand-primary text-shadow">Plan du Site</a>
+						</li>
+					</ul>
+				</div>
 
-// 			<div id="copyright" class="container text-center">
-// 				<p><span>&copy;</span> 2022 Sunpower - Produits & Activités autour des énergies renouvelables</p>
-// 			</div>
-// 		</footer>`
-// );
+				<div class="container-fluid text-center col-lg-3 my-lg-auto">
+					<a href="contact.html" class="text-brand-primary fs-4 fw-bold">Nous contacter</a>
+				</div>
+			</div>
+			<hr />
+			<div id="social__footer" class="container-fluid d-flex justify-content-center" style="height: 5em">
+				<i class="bi bi-facebook col-3 fs-1 text-center blue"></i
+				><i class="bi bi-linkedin col-3 fs-1 text-center blue"></i
+				><i class="bi bi-twitter col-3 fs-1 text-center blue"></i>
+			</div>
+
+			<div id="copyright" class="container text-center">
+				<p><span>&copy;</span> 2022 Sunpower - Produits & Activités autour des énergies renouvelables</p>
+			</div>
+		</footer>`
+);
 
 const burgerMenuIcon = document.getElementById('burgerMenuIcon');
 
