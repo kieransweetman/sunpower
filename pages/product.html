@@ -1,177 +1,116 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-		<!-- bootstrap -->
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-		<!-- icons -->
-		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css" />
+  <!-- bootstrap -->
 
-		<!-- css -->
-		<link
-			href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
-			rel="stylesheet"
-			integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
-			crossorigin="anonymous"
-		/>
+  <!-- icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css" />
 
-		<!-- js -->
-		<script
-			src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
-			integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
-			crossorigin="anonymous"
-			defer
-		></script>
+  <!-- css -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous" />
+
+  <!-- js -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"
+    defer></script>
+
+  <script src="../genericTags.js" defer></script>
 
 
-   
-		
 
-    <link rel="stylesheet" href="../style.css" />
-    <script src="../index.js" defer></script>
-    <title>Products</title>
-  </head>
-  <body>
-    
-    <div class="bg-brand-secondary">
-		<header class="container">
-      <nav class="navbar">
-        <a class="navbar-brand" href="../index.html">
-					<img src="../media/logo_mobile.png" width="50" />
-          </a>
-          
-					<i class="bi bi-list text-brand-primary fs-0" id="burgerMenuIcon"></i>
-          
-				</div>
-			</div>
-      </nav>
-      
-		</header>
-    </div>
-    <!-- Burger menu (hidden at start) -->
-    <div id="burgerExpanded" class="d-none">
-        <ul class="container list-unstyled text-center text-shadow d-flex flex-column justify-content-evenly"  style="height: 85vh">
-            <li class="p-4 mt-4 fs-4"><a href="./pages/product.html#products" class="text-uppercase text-brand-primary">Ombrières solaires</a></li>
-            <li class="p-2"><hr class="text-brand-ternary border-5 opacity-75"></li>
-            <li class="p-4  fs-4"><a href="../pages/product.html" class="text-uppercase text-brand-primary">Produits</a></li>
-            <li class="p-4  fs-4"><a href="" class="text-uppercase text-brand-primary">Carte interactive</a></li>
-            <li class="p-4  fs-4"><a href="../pages/activities.html" class="text-uppercase text-brand-primary">Activités</a></li>
-            <li class="p-2"><hr class="text-brand-ternary border-5 opacity-75"></li>
-            <li class="p-4  fs-4"><a href="" class="text-uppercase text-brand-primary">Nous contacter</a></li>
-            <li class="p-4  fs-4"><a href="../pages/propos.html" class="text-uppercase text-brand-primary">À propos</a></li>
-        </ul>
-      </div>
-      <!-- End burger menu -->
-		<main id="main">
-            <section class="container   p-3 ">
-                <div class="row p-3 ">
-                    <h1 class="text-center fs-2">Les ombrières solaires</h1>
-                    <p class="">Le développement des ombrières solaires pour la recharge des véhicules
-                        électriques constitue le pilier de notre développement.</p>
-                        
-                </div>
-                    
-                <!-- text center vs text start ? -->
-                <div class="row gap-5">
-                    <h2 class="fs-3 text-center">Trois raisons de choisir les ombrières solaires Sunpower : </h2>
-                    <div id="durability" class="text-center">
-                        <i class="bi bi-calendar-check fs-1 text-brand-ternary "></i>
-                        <h3 class="mt-3">Durabilité prouvée
-                        </h3>
-                        <p class="">Les ombrières solaires Sunpower sont conçus pour fonctionner parfaitement en conditions réelles.</p>
 
-                    </div>
-                    <div id="fiabilité" class="text-center">
-                        <i class="bi bi-tools fs-1 text-brand-ternary"></i>
-                        <h3 class="mt-3">Fiabilité éprouvée
-                        </h3>
-                        <p class="">Les ombrières solaires Sunpower garantissent des performances sans compromis et une fiabilité à toute épreuve.</p>
-                    </div>
-                    <div id="energie" class="text-center">
-                        <i class="bi bi-sun-fill fs-1 text-brand-ternary"></i>
-                        <h3 class="">Plus d'énergie
-                        </h3>
-                        <p class="">Sunpower produit davantage d'énergie sur toute la durée de vie du système et offre l'assurance de faire des économies.</p>
+  <link rel="stylesheet" href="../style.css" />
+  <script src="../index.js" defer></script>
+  <title>Products</title>
+</head>
 
-                    </div>
-                </div>
-            </section>
-            <section id="products" class="container grid p-4  ">
-                <div class=" row text-center">
-                    <h2>Nos produits</h2>
-                <p class="text-start">La gamme complète de panneaux solaires SunPower répond à tous vos besoins énergétiques, quels qu'ils soient.</p>
-                
-                </div>
-                <div class="row p-2 mt-4  bg-light  rounded">
-                    
-                    <img class="p-0 rounded " src="../media/photos/panel1.png" alt="" >
-                    <h2 class="mt-3">Panneaux solaisres
-                        Sunpower Maxi</h2>
-                    <p>Les panneaux solaires Sunpower Maxe allient le rendement le plus élevé du marché à une fiabilité inégalée et une production optimale</p>
-                </div>
-                <div class="row p-3 mt-4 bg-light rounded">
-                    <img class="p-0 rounded " src="../media/photos/panel3.png" alt="">
-                    <h2 class="mt-3">Panneaux solaires
-                        Sunpower Perform
-                        </h2>
-                    <p>Les panneaux solaires Sunpower Perform affichent un rendement, une qualité et une fiabilité bien supérieurs à ceux des panneaux conventionnels.</p>
-                </div>
-                <div class="row p-3 mt-4 bg-light rounded">
-                    <img class="p-0 rounded " src="../media/photos/panel4.png" alt="">
-                    <h2 class="mt-3">Panneaux solaires Sunpower Turbo
-                    </h2>
-                    <p>La fiabilité et les performances des panneaux solaires Sunpower, à la pointe du secteur, s'associent à la technologie des micro-onduleurs pour maximiser le potentiel de votre toit.</p>
-                </div>
-
-            </section>
-        </main>
-
-    <footer class="container-fluid p-3">
-      <div id="logo__footer" class="row col-10 rounded mx-auto mt-5">
-        <img
-          class="row mx-auto d-block"
-          src="../media/logo.png"
-          alt="Sunpower logo"
-        />
-      </div>
-      <div id="site_map__footer" class="row p-1 mt-5">
-        <ul class="col list-unstyled">
-          <li class="mb-3"><a href="">Ombrières solaires</a></li>
-          <li class="mb-3"><a href="">Carte interactive</a></li>
-          <li class="mb-3"><a href="">Produits</a></li>
-          <li class="mb-3"><a href="">Activités</a></li>
-          <li class="mb-3"><a href="">Partenaires</a></li>
-        </ul>
-        <ul class="col list-unstyled">
-          <li class="mb-3"><a href="">À propos</a></li>
-          <li class="mb-3"><a href="">Mentions légales</a></li>
-          <li class="mb-3"><a href="">CGV</a></li>
-          <li class="mb-3"><a href="">Plan du Site</a></li>
-        </ul>
-      </div>
-      <div class="container-fluid text-center">
-        <a href=""> Nous contacter</a>
-      </div>
-      <hr />
-      <div
-        id="social__footer"
-        class="container-fluid d-flex justify-content-center"
-        style="height: 5em"
-      >
-        <i class="bi bi-facebook col-3 fs-1 text-center blue"></i
-        ><i class="bi bi-linkedin col-3 fs-1 text-center blue"></i
-        ><i class="bi bi-twitter col-3 fs-1 text-center blue"></i>
+<body>
+  <main id="main">
+    <section class="container p-3 ">
+      <div class="row p-3 ">
+        <h1 class="text-center fw-bolder text-uppercase text-brand-primary fs-2 lh-base py-4 text-shadow">Les ombrières
+          solaires</h1>
+        <p class="fs-8">Le développement des ombrières solaires pour la recharge des véhicules électriques constitue le
+          pilier de notre développement.</p>
       </div>
 
-      <div id="copyright" class="container text-center">
-        <p>
-          <span>&copy;</span> 2022 Sunpower - Produits & Activités autour des
-          énergies renouvelables
-        </p>
+      <!-- text center vs text start ? -->
+      <div class="row gap-3 p-3 text-center">
+        <h2 class="fs-8 text-start">Trois raisons de choisir les ombrières solaires Sunpower : </h2>
+        <div id="durability">
+          <i class="bi bi-calendar-check fs-0 text-brand-ternary"></i>
+          <h3 class="mt-3 text-brand-ternary fs-7">Durabilité prouvée
+          </h3>
+          <p class="fs-8">Les ombrières solaires Sunpower sont conçus pour fonctionner parfaitement en
+            conditions
+            réelles.
+          </p>
+
+        </div>
+        <div id="fiabilité">
+          <i class="bi bi-tools fs-0 text-brand-ternary"></i>
+          <h3 class="mt-3 text-brand-ternary fs-7">Fiabilité éprouvée
+          </h3>
+          <p class="fs-8">Les ombrières solaires Sunpower garantissent des performances sans compromis et
+            une fiabilité
+            à
+            toute épreuve.</p>
+        </div>
+        <div id="energie">
+          <i class="bi bi-sun-fill fs-0 text-brand-ternary"></i>
+          <h3 class="mt-3 text-brand-ternary fs-7">Plus d'énergie
+          </h3>
+          <p class="fs-8">Sunpower produit davantage d'énergie sur toute la durée de vie du système et offre
+            l'assurance
+            de
+            faire des économies.</p>
+
+        </div>
       </div>
-    </footer>
-  </body>
+    </section>
+    <section id="products" class="container grid p-4 text-center">
+      <div class="row">
+        <h2 class="mt-3 fw-bolder text-uppercase text-brand-primary fs-2 py-4 text-shadow">Nos produits</h2>
+        <p class="text-start fs-8">La gamme complète de panneaux solaires SunPower répond à tous vos besoins
+          énergétiques,
+          quels qu'ils soient.</p>
+
+      </div>
+      <div class="row p-2 mt-4  bg-light  rounded g-2">
+        <img class="p-0 rounded " src="../media/photos/panel1.png" alt="Panneaux solaires Sunpower Maxi">
+        <h2 class="mt-3 text-brand-ternary fs-7 lh-base">Panneaux solaires<span style="display: block;">Sunpower Maxi
+        </h2>
+        <p class="fs-8">Les panneaux solaires Sunpower Maxi allient le rendement le plus élevé du marché à
+          une fiabilité inégalée et une production optimale</p>
+      </div>
+      <div class="row p-3 mt-4 bg-light rounded g-2">
+        <img class="p-0 rounded " src="../media/photos/panel3.png" alt="Panneaux solaires Sunpower Perform">
+        <h2 class="mt-3 text-brand-ternary fs-7 lh-base">Panneaux solaires<span style="display: block;"></span>Sunpower
+          Perform
+        </h2>
+        <p class="fs-8">Les panneaux solaires Sunpower Perform affichent un rendement, une qualité et une
+          fiabilité bien
+          supérieurs à
+          ceux des panneaux conventionnels.</p>
+      </div>
+      <div class="row p-3 mt-4 bg-light rounded g-2">
+        <img class="p-0 rounded " src="../media/photos/panel4.png" alt="Panneaux solaires Sunpower Turbo">
+        <h2 class="mt-3 text-brand-ternary fs-7 lh-base">Panneaux solaires<span style="display: block;"></span>Sunpower
+          Turbo
+        </h2>
+        <p class="fs-8">La fiabilité et les performances des panneaux solaires Sunpower, à la pointe du
+          secteur, s'associent à la
+          technologie des micro-onduleurs pour maximiser le potentiel de votre toit.</p>
+      </div>
+
+    </section>
+  </main>
+</body>
+
 </html>
