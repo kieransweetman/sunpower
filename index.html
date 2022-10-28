@@ -26,10 +26,9 @@
 			defer
 		></script>
 
-		<link rel="stylesheet" href="style.css" />
-		<script src="./genericTags.js" defer></script>
-		<script src="index.js" defer></script>
-		<script src="../js/scrollDown.js" defer></script>
+		<link rel="stylesheet" href="./style.css" />
+
+		<script src="./js/main.js" defer></script>
 		<title>Page d'accueil</title>
 	</head>
 	<body>
@@ -114,7 +113,12 @@
 						de recharge.
 					</p>
 				</div>
-				<div class="row position-relative p-2 d-lg-none">
+				<div
+					class="row position-relative p-2 d-lg-none"
+					data-aos="flip-up"
+					data-aos-delay="300"
+					data-aos-duration="700"
+				>
 					<img src="../media/map.png" class="img-fluid opacity-75 p-0 rounded" alt="Carte interactive" />
 					<div class="position-absolute h-100 w-100 d-flex justify-content-center align-items-center">
 						<p class="text-light map-border fw-bold bg-dark bg-opacity-75 p-5">Appuyez pour ouvrir</p>
@@ -142,7 +146,7 @@
 						notre société Sunpower est basée à Grenoble. Son capital est de 10 millions d’euros.
 					</p>
 				</div>
-				<div class="row mb-lg-5">
+				<div class="row mb-lg-5" data-aos="fade-up" data-aos-offset="200" data-aos-delay="150" data-aos-duration="1000">
 					<div class="col-4">
 						<img src="../media/serge.png" alt="Serge Turing" />
 					</div>
@@ -154,7 +158,7 @@
 						</p>
 					</div>
 				</div>
-				<div class="row mb-lg-5">
+				<div class="row mb-lg-5" data-aos="fade-up" data-aos-offset="200" data-aos-delay="300" data-aos-duration="1000">
 					<div class="col-8">
 						<p class="fs-8">
 							<span class="fs-7 text-brand-primary text-shadow fw-bold text-capitalize">Hugo Oppenheimer</span
@@ -166,7 +170,7 @@
 						<img src="../media/hugo.png" alt="Hugo Oppenheimer" />
 					</div>
 				</div>
-				<div class="row mb-lg-5">
+				<div class="row mb-lg-5" data-aos="fade-up" data-aos-offset="200" data-aos-delay="600" data-aos-duration="1000">
 					<div class="col-4">
 						<img src="../media/alex.png" alt="Alex Pareneinstein" />
 					</div>

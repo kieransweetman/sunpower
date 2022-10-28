@@ -1,12 +1,13 @@
 // Ajout d'un bouton pour chaque frame de la homepage pour permettre de naviguer jusqu'à la prochaine, sauf pour la dernière (pas de prochaine) le bouton remontera à la première.
 // Permet d'ajouter autant de frame que désiré sans se soucier de dupliquer le code du bouton à chaque fois
 
-const sections = document.querySelectorAll('section');
-sections.forEach((section, i) => {
-	section.insertAdjacentHTML(
-		'beforeend',
-		`
-				<div class="container-fluid d-flex justify-content-center align-items-center d-lg-none">
+export default function scrollDown() {
+	const sections = document.querySelectorAll('section');
+	sections.forEach((section, i) => {
+		section.insertAdjacentHTML(
+			'beforeend',
+			`
+				<div class="container-fluid d-flex justify-content-center align-items-center">
 					<div
 						class="border rounded-circle d-flex justify-content-center align-items-center bg-brand-secondary text-brand-primary fw-bold scrollButton"
 					>
@@ -21,5 +22,7 @@ sections.forEach((section, i) => {
 						</div>
 					</div>
 				</div>`
-	);
-});
+		);
+	});
+}
+export { scrollDown };

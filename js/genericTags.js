@@ -1,6 +1,7 @@
-document.body.insertAdjacentHTML(
-	'afterbegin',
-	`
+export default function menu() {
+	document.body.insertAdjacentHTML(
+		'afterbegin',
+		`
 	<header class="d-none d-lg-block">
 			<nav class="navbar navbar-expand-lg">
 				<div class="container-fluid">
@@ -69,11 +70,11 @@ document.body.insertAdjacentHTML(
 			</ul>
 		</div>
 		<!-- End burger menu -->`
-);
+	);
 
-document.body.insertAdjacentHTML(
-	'beforeend',
-	`
+	document.body.insertAdjacentHTML(
+		'beforeend',
+		`
 		<footer class="container-fluid p-3">
 			<div class="d-lg-flex">
 				<div id="logo__footer" class="row col-10 col-md-6 col-lg-3 mx-auto mx-lg-0 mt-5">
@@ -121,13 +122,16 @@ document.body.insertAdjacentHTML(
 				<p><span>&copy;</span> 2022 Sunpower - Produits & Activités autour des énergies renouvelables</p>
 			</div>
 		</footer>`
-);
+	);
 
-const burgerMenuIcon = document.getElementById('burgerMenuIcon');
+	const burgerMenuIcon = document.getElementById('burgerMenuIcon');
 
-burgerMenuIcon.addEventListener('click', (event) => {
-	const burgerExpanded = document.getElementById('burgerExpanded');
-	const mainContent = document.querySelector('main');
-	burgerExpanded.classList.toggle('d-none');
-	mainContent.classList.toggle('d-none');
-});
+	burgerMenuIcon.addEventListener('click', (event) => {
+		const burgerExpanded = document.getElementById('burgerExpanded');
+		const mainContent = document.querySelector('main');
+		burgerExpanded.classList.toggle('d-none');
+		mainContent.classList.toggle('d-none');
+	});
+}
+
+export { menu };
