@@ -6,7 +6,7 @@ export default function menu() {
 					  <div class="container">
 						  <nav class="navbar">
 							  <a class="navbar-brand" href="./index.html">
-								  <img src="./media/logo_mobile.png" width="50" alt="Logo" />
+								  <img src="" width="50" alt="Logo" />
 							  </a>
 		  
 							  <i class="bi bi-list text-brand-primary fs-0" id="burgerMenuIcon"></i>
