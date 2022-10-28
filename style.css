@@ -17,12 +17,12 @@ header {
 	height: 85vh;
 }
 
-#firstFrame {
+#frame1 {
 	height: 90vh;
 }
 
-#secondFrame,
-#thirdFrame {
+#frame2,
+#frame3 {
 	height: 100vh;
 }
 
@@ -33,7 +33,7 @@ footer {
 	background-color: #d9bf71;
 }
 
-.scrollButon {
+.scrollButton {
 	height: 45px;
 	width: 45px;
 }
