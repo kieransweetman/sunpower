@@ -6,7 +6,7 @@ sections.forEach((section, i) => {
 	section.insertAdjacentHTML(
 		'beforeend',
 		`
-				<div class="container-fluid d-flex justify-content-center align-items-center">
+				<div class="container-fluid d-flex justify-content-center align-items-center d-lg-none">
 					<div
 						class="border rounded-circle d-flex justify-content-center align-items-center bg-brand-secondary text-brand-primary fw-bold scrollButton"
 					>

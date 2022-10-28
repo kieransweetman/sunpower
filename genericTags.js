@@ -1,6 +1,36 @@
 document.body.insertAdjacentHTML(
 	'afterbegin',
-	`<header class="bg-brand-secondary">
+	`
+	<header class="d-none d-lg-block">
+			<nav class="navbar navbar-expand-lg">
+				<div class="container-fluid">
+					<a class="navbar-brand" href="../index.html">
+						<img src="../media/logo_mobile.png" width="50" alt="Logo" />
+					</a>
+					<ul class="navbar-nav container-fluid d-flex justify-content-evenly">
+						<li class="nav-item">
+							<a href="../pages/product.html#products" class="nav-link text-uppercase text-brand-primary"
+								>Ombrières solaires</a
+							>
+						</li>
+						<li><a href="../pages/product.html" class="nav-link text-uppercase text-brand-primary">Produits</a></li>
+						<li>
+							<a href="../pages/map.html" class="nav-link text-uppercase text-brand-primary">Carte interactive</a>
+						</li>
+						<li>
+							<a href="../pages/activities.html" class="nav-link text-uppercase text-brand-primary">Activités</a>
+						</li>
+						<li><a href="../pages/propos.html" class="nav-link text-uppercase text-brand-primary">À propos</a></li>
+						<li>
+							<a href="../pages/contact.html" class="nav-link text-uppercase text-brand-primary">Nous contacter</a>
+						</li>
+					</ul>
+				</div>
+			</nav>
+		</header>
+
+		
+	<header class="bg-brand-secondary d-lg-none">
 			<!-- Navbar -->
 			<div class="container">
 				<nav class="navbar">
