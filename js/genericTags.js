@@ -46,7 +46,7 @@ export default function menu() {
     "beforeend",
     `		<footer class="container-fluid p-3">
 					  <div id="logo__footer" class="row col-10 rounded mx-auto mt-5">
-						  <img class="row mx-auto d-block" src="./media/logo.png" alt="Sunpower logo" />
+						  <img id="footer_logo" class="row mx-auto d-block" src="./media/logo.png" alt="Sunpower logo" />
 					  </div>
 					  <div id="site_map__footer" class="row p-1 mt-5">
 						  <ul class="col list-unstyled">
