@@ -1,10 +1,9 @@
-"use strict";
+import AOS from 'aos';
+import aos from 'aos/dist/aos.css';
+import menu from './js/genericTags';
+import scrollDown from './js/scrollDown';
 
-const burgerMenuIcon = document.getElementById("burgerMenuIcon");
-
-burgerMenuIcon.addEventListener("click", (event) => {
-  const burgerExpanded = document.getElementById("burgerExpanded");
-  const mainContent = document.querySelector("main");
-  burgerExpanded.classList.toggle("d-none");
-  mainContent.classList.toggle("d-none");
-});
+menu();
+scrollDown();
+AOS.init();
+AOS.refreshHard();
