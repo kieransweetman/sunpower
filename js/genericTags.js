@@ -1,12 +1,13 @@
 export default function menu() {
+  let location = window.location.pathname;
   document.body.insertAdjacentHTML(
     'afterbegin',
     `
 	<header class="d-none d-lg-block">
 			<nav class="navbar navbar-expand-lg">
 				<div class="container-fluid">
-					<a class="navbar-brand" href="${location === 'index.html' ? './' : '../'}index.html">
-						<img src="${location === 'index.html' ? './' : '../'}/media/logo.png" width="70" alt="Logo" />
+					<a class="navbar-brand" href="${location === '/index.html' ? './' : '../'}index.html">
+						<img src="${location === '/index.html' ? './' : '../'}/media/logo.png" width="70" alt="Logo" />
 					</a>
 					<ul class="navbar-nav container-fluid d-flex justify-content-evenly">
 						<li class="nav-item">
@@ -78,7 +79,9 @@ export default function menu() {
 		<footer class="container-fluid p-3">
 			<div class="d-lg-flex">
 				<div id="logo__footer" class="row col-10 col-md-6 col-lg-3 mx-auto mx-lg-0 mt-5">
-					<img class="mx-auto d-block img-fluid" src="../media/logo.png" alt="Sunpower logo" />
+					<img class="mx-auto d-block img-fluid" src="${
+                location === '/index.html' ? './' : '../'
+              }media/logo.png" alt="Sunpower logo" />
 				</div>
 				<div id="site_map__footer" class="row p-1 mt-5 d-lg-flex justify-content-lg-around col-lg-6">
 					<ul class="col list-unstyled text-md-center">

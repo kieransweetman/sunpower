@@ -6,3 +6,4 @@ import scrollDown from './js/scrollDown';
 menu();
 scrollDown();
 AOS.init();
+AOS.refreshHard();
