@@ -27,7 +27,7 @@ header {
 }
 
 body {
-  font-family: "Space";
+  font-family: 'Space';
 }
 footer {
   background-color: #d9bf71;
@@ -40,7 +40,7 @@ footer {
 
 /* Marker modifier */
 #main ul li::before {
-  content: "•";
+  content: '•';
   color: #358c84;
   font-size: 18px;
   font-weight: bold;

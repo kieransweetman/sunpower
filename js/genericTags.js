@@ -1,18 +1,14 @@
 export default function menu() {
   let location = window.location.pathname;
   document.body.insertAdjacentHTML(
-    "afterbegin",
+    'afterbegin',
     `<header class="bg-brand-secondary">
 					  <!-- Navbar -->
 					  <div class="container">
 						  <nav class="navbar">
-							  <a class="navbar-brand" href="${
-                  location === "index.html" ? "./" : "../"
-                }index.html">
+							  <a class="navbar-brand" href="${location === 'index.html' ? './' : '../'}index.html">
 
-								  <img src="${
-                    location === "index.html" ? "./" : "../"
-                  }media/logo_mobile.png" width="50" alt="mobile logo" />
+								  <img src="${location === 'index.html' ? './' : '../'}media/logo_mobile.png" width="50" alt="mobile logo" />
 							  </a>
 		  
 							  <i class="bi bi-list text-brand-primary fs-0" id="burgerMenuIcon"></i>
@@ -49,7 +45,7 @@ export default function menu() {
   );
 
   document.body.insertAdjacentHTML(
-    "beforeend",
+    'beforeend',
     `		<footer class="container-fluid p-3">
 					  <div id="logo__footer" class="row col-10 rounded mx-auto mt-5">
 						  <img id="footer_logo" class="row mx-auto d-block" src="./media/logo.png" alt="Sunpower logo" />
@@ -84,13 +80,13 @@ export default function menu() {
 				  </footer>`
   );
 
-  const burgerMenuIcon = document.getElementById("burgerMenuIcon");
+  const burgerMenuIcon = document.getElementById('burgerMenuIcon');
 
-  burgerMenuIcon.addEventListener("click", (event) => {
-    const burgerExpanded = document.getElementById("burgerExpanded");
-    const mainContent = document.querySelector("main");
-    burgerExpanded.classList.toggle("d-none");
-    mainContent.classList.toggle("d-none");
+  burgerMenuIcon.addEventListener('click', (event) => {
+    const burgerExpanded = document.getElementById('burgerExpanded');
+    const mainContent = document.querySelector('main');
+    burgerExpanded.classList.toggle('d-none');
+    mainContent.classList.toggle('d-none');
   });
 }
 

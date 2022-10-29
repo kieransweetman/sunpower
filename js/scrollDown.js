@@ -3,11 +3,11 @@
 
 export default function scrollDown() {
   let location = window.location.pathname;
-  if (location === "index.html") {
-    const sections = document.querySelectorAll("section");
+  if (location === 'index.html') {
+    const sections = document.querySelectorAll('section');
     sections.forEach((section, i) => {
       section.insertAdjacentHTML(
-        "beforeend",
+        'beforeend',
         `
 				<div class="container-fluid d-flex justify-content-center align-items-center">
 					<div
@@ -16,13 +16,11 @@ export default function scrollDown() {
 						<div
 							role="button"
 							onclick="document.querySelector('#frame${
-                i < sections.length - 1 ? `${i + 2}` : "1"
+                i < sections.length - 1 ? `${i + 2}` : '1'
               }').scrollIntoView({behavior:'smooth'})"
 							class="text-center"
 						>
-							<i class="fs-1 bi bi-chevron-double-${
-                i < sections.length - 1 ? "down" : "up"
-              }"></i>
+							<i class="fs-1 bi bi-chevron-double-${i < sections.length - 1 ? 'down' : 'up'}"></i>
 						</div>
 					</div>
 				</div>`
