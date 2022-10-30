@@ -4,14 +4,18 @@ module.exports = {
   entry: ['./index.js'],
   output: {
     filename: 'main.js',
-    path: path.resolve(__dirname, './js'),
+    path: path.resolve(__dirname, './dist'),
+    clean: true,
   },
   module: {
     rules: [
       {
         test: /\.css$/i,
-
         use: ['style-loader', 'css-loader'],
+      },
+      {
+        test: /\.png/,
+        type: 'asset/resource',
       },
     ],
   },
