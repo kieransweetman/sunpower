@@ -34,6 +34,7 @@ header {
 body {
   font-family: 'Space';
 }
+
 footer {
   background-color: #d9bf71;
 }
@@ -120,6 +121,7 @@ footer {
   position: relative;
   height: 0;
 }
+
 .map-container iframe {
   left: 0;
   top: 0;
@@ -144,10 +146,31 @@ footer {
   .fs-8 {
     font-size: 20px;
   }
+
   h1 {
     font-size: 48px;
   }
+
   h2 {
     font-size: 24px;
+  }
+
+  h3 {
+    font-size: 32px;
+  }
+
+  .fs-lg-h2 {
+    font-size: 36px;
+  }
+
+  .vh-75 {
+    height: 85vh;
+  }
+
+  #A_R_D,
+  #A_projets,
+  #A_ombrière,
+  #collab {
+    height: 100vh;
   }
 }

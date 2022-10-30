@@ -1,8 +1,13 @@
+//assets
 import logo from '../media/logo.png';
 import logo_mobile from '../media/logo_mobile.png';
-export default function menu() {
-  let location = window.location.pathname;
+import hugo from '../media/photos/hugo.png';
+import alex from '../media/photos/alex.png';
+import serge from '../media/photos/serge.png';
 
+const location = window.location.pathname;
+
+export function menu() {
   document.body.insertAdjacentHTML(
     'afterbegin',
     `
@@ -138,4 +143,12 @@ export default function menu() {
   });
 }
 
-export { menu };
+export function checkFounders() {
+  if (location === '/index.html' || location === '/' || location === '/pages/propos.html') {
+    document.querySelector('#serge').src = serge;
+    document.querySelector('#hugo').src = hugo;
+    document.querySelector('#alex').src = alex;
+  }
+}
+
+export default { menu, checkFounders };
