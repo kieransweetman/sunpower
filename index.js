@@ -1,6 +1,6 @@
 import AOS from 'aos';
 import aos from 'aos/dist/aos.css';
-import { menu, checkFounders } from './js/genericTags';
+import menu from './js/genericTags';
 import scrollDown from './js/scrollDown';
 import formObserver from './js/contact_form';
 
@@ -16,7 +16,5 @@ if (
 
 menu();
 scrollDown();
-checkFounders();
-
 AOS.init();
 AOS.refreshHard();
