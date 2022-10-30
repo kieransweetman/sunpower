@@ -4,7 +4,7 @@ export default function menu() {
     'afterbegin',
     `
 	<header class="d-none d-lg-block">
-			<nav class="navbar navbar-expand-lg">
+			<nav class="navbar navbar-expand-lg px-5">
 				<div class="container-fluid">
 					<a class="navbar-brand" href="${location === '/index.html' ? './' : '../'}index.html">
 						<img src="${location === '/index.html' ? './' : '../'}/media/logo.png" width="70" alt="Logo" />
