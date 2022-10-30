@@ -17,8 +17,6 @@
       integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="node_modules/normalize.css/normalize.css" />
 
     <!-- js -->
     <script
@@ -29,31 +27,34 @@
     ></script>
 
     <link rel="stylesheet" href="../style.css" />
-    <script src="../js/main.js" defer></script>
+    <script src="../dist/main.js" defer></script>
     <title>Activités</title>
   </head>
   <body>
     <main class="grid container p-3">
       <h1 class="fs-2 fw-bold text-uppercase text-center text-shadow py-4 mx-3 text-brand-primary">Activités</h1>
-      <ul class="list-unstyled mb-4">
-        <li class="p-2"><a class="text-brand-primary" href="">La R&D</a></li>
-        <li class="p-2"><a class="text-brand-primary" href="">L'aide aux montages de projets</a></li>
-        <li class="p-2"><a class="text-brand-primary" href="">La commercialisation des ombrières</a></li>
-      </ul>
-
-      <section id="R_D" class="row fs-8 mb-4">
+      <div class="vh-75 d-lg-flex align-items-lg-center justify-content-lg-around">
+        <ul class="list-unstyled mb-4 text-lg-center fs-lg-h2">
+          <li class="p-2"><a class="text-brand-primary" href="#A_R_D">La R&D</a></li>
+          <li class="p-2"><a class="text-brand-primary" href="#A_projets">L'aide aux montages de projets</a></li>
+          <li class="p-2">
+            <a class="text-brand-primary" href="#A_ombrière">La commercialisation des ombrières</a>
+          </li>
+        </ul>
+      </div>
+      <section id="A_R_D" class="row grid fs-8 mb-4 p-lg-5">
         <div class="col-10">
-          <h2 class="text-brand-primary fw-bolder fs-7 mb-0">La recherche & développement</h2>
-          <p>constituent l’ADN de la société.</p>
+          <h3 class="d-lg-inline text-brand-primary fw-bolder mb-0">La recherche & développement</h3>
+          <p class="">constituent l’ADN de la société.</p>
         </div>
-        <div class="col-10 offset-1 text-center g-3">
+        <div class="col-10 offset-1 text-center text-lg-start g-3 col-lg-12">
           <p>
             Nos produits sont en
             <span class="text-brand-ternary">constante amélioration</span>. En outre, nous participons à différents
             projets européens.
           </p>
         </div>
-        <div class="col-10 offset-2 text-end g-3">
+        <div class="col-10 offset-2 text-end text-lg-start g-3 col-lg-12 offset-lg-1">
           <p>
             Un de nos projets phare, que nous menons conjointement avec le CEA et le groupe PSA, est
             <span class="text-brand-ternary">un système de recharge par induction</span>
@@ -61,19 +62,19 @@
           </p>
         </div>
 
-        <p class="col-10 offset-1 text-center g-3">Nos principaux travaux concernent :</p>
-        <ul class="list-unstyled">
+        <p class="col-10 offset-1 text-center g-3 text-lg-start offset-lg-0">Nos principaux travaux concernent :</p>
+        <ul class="list-unstyled text-lg-start offset-lg-1">
           <li>L’électronique de puissance</li>
           <li>Le développement des BMS (Battery Mangement System)</li>
           <li>L’électronique embarquée de manière générale</li>
         </ul>
       </section>
-      <section id="projets" class="row fs-8 mb-4">
+      <section id="A_projets" class="grid row fs-8 mb-4 p-lg-5">
         <div class="col-10">
-          <h2 class="fs-7 text-brand-primary fw-bold mb-0">L’aide aux montages de projets</h2>
-          <p>et à la réalisation de ceux-ci est au centre de nos préocupations.</p>
+          <h3 class="text-brand-primary fw-bold mb-0">L’aide aux montages de projets</h3>
+          <p class="">et à la réalisation de ceux-ci est au centre de nos préocupations.</p>
         </div>
-        <div class="col-10 offset-1 text-center g-3">
+        <div class="col-10 offset-1 text-center g-3 text-lg-start">
           <p>
             Nous mettons
             <span class="text-brand-ternary">un point d’honneur</span>
@@ -82,35 +83,35 @@
             .
           </p>
         </div>
-        <div class="col-10 offset-2 text-end g-3">
+        <div class="col-10 offset-2 text-end g-3 text-lg-start offset-lg-1">
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus varius pharetra mollis. Nam a luctus quam,
             sed condimentum risus. Donec venenatis nibh in lorem blandit, vitae rutrum nisi sollicitudin.
           </p>
         </div>
       </section>
-      <section class="row fs-8">
+      <section id="A_ombrière" class="grid row fs-8 p-lg-5">
         <div class="col-10">
-          <h2 class="text-brand-primary fw-bold mb-0 fs-7">Les ombrières solaires</h2>
+          <h3 class="text-brand-primary fw-bold mb-0">Les ombrières solaires</h3>
           <p>et leur commercialisation est la clé de voute de notre activité à ce jour.</p>
         </div>
-        <div class="col-10 offset-1 text-center g-3">
+        <div class="col-10 offset-1 text-center g-3 text-lg-start">
           <p>
             Le projet est soutenu par
-            <a href="" class="text-brand-primary">différents partenaires</a>
+            <a href="../pages/propos.html#Historique" class="text-brand-primary">différents partenaires</a>
             du monde de
             <span class="text-brand-ternary">l’énergie renouvelable</span>
             et de la technologie.
           </p>
         </div>
-        <div class="col-10 offset-2 text-end g-3">
+        <div class="col-10 offset-2 text-end g-3 text-lg-start offset-lg-1">
           <p>
             Nous avons levé des fonds conséquents grâce à la confiance accordée par ces acteurs et, par la suite, grâce
             à la satisfaction de nos clients en Occitanie et plus particulièrement dans l’agglomération de Montpellier.
           </p>
         </div>
 
-        <p class="col-10 offset-1 text-center g-3">
+        <p class="col-10 offset-1 text-center g-3 text-lg-start offset-lg-1">
           La ville de Toulouse s’est ainsi récemment positionnée pour l’installation d’ombrières sur son territoire et
           l’activité générale
           <span class="text-brand-ternary">a le vent en poupe</span>.
