@@ -1,4 +1,4 @@
-@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css");
+@import url('https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css');
 
 @font-face {
   font-family: Space;
@@ -6,7 +6,7 @@
 }
 body {
   font-family: 'Space';
-  background-color: #D7D7D7;
+  background-color: #d7d7d7;
 }
 
 main {
@@ -90,7 +90,6 @@ footer {
   background-color: rgb(151, 191, 4, 0.4);
 }
 
-
 @font-face {
   font-family: Space;
   src: url(../media/fonts/SpaceMono-Regular.ttf);
@@ -100,11 +99,11 @@ footer {
   color: blue;
 }
 
-#ent_form_page{
+#ent_form_page {
   height: 90vh;
 }
 
-#ent_form_desc::placeholder{
+#ent_form_desc::placeholder {
   font-size: 12px;
 }
 
