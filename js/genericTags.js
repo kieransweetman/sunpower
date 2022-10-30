@@ -1,13 +1,21 @@
-export default function menu() {
-  let location = window.location.pathname;
+//assets
+import logo from '../media/logo.png';
+import logo_mobile from '../media/logo_mobile.png';
+import hugo from '../media/photos/hugo.png';
+import alex from '../media/photos/alex.png';
+import serge from '../media/photos/serge.png';
+
+const location = window.location.pathname;
+
+export function menu() {
   document.body.insertAdjacentHTML(
     'afterbegin',
     `
 	<header class="d-none d-lg-block">
-			<nav class="navbar navbar-expand-lg">
+			<nav class="navbar navbar-expand-lg px-5">
 				<div class="container-fluid">
 					<a class="navbar-brand" href="${location === '/index.html' ? './' : '../'}index.html">
-						<img src="${location === '/index.html' ? './' : '../'}/media/logo.png" width="70" alt="Logo" />
+						<img id = 'logo' src="${logo}" width="70" alt="Logo" />
 					</a>
 					<ul class="navbar-nav container-fluid d-flex justify-content-evenly">
 						<li class="nav-item">
@@ -35,9 +43,9 @@ export default function menu() {
 	<header class="bg-brand-secondary d-lg-none">
 			<!-- Navbar -->
 			<div class="container">
-				<nav class="navbar">
+				<nav id="" class="navbar">
 					<a class="navbar-brand" href="../index.html">
-						<img src="../media/logo_mobile.png" width="50" alt="Logo" />
+						<img src="${logo_mobile}" width="50" alt="Logo" />
 					</a>
 
 					<i class="bi bi-list text-brand-primary fs-0" id="burgerMenuIcon"></i>
@@ -79,9 +87,7 @@ export default function menu() {
 		<footer class="container-fluid p-3">
 			<div class="d-lg-flex">
 				<div id="logo__footer" class="row col-10 col-md-6 col-lg-3 mx-auto mx-lg-0 mt-5">
-					<img class="mx-auto d-block img-fluid" src="${
-            location === '/index.html' ? './' : '../'
-          }media/logo.png" alt="Sunpower logo" />
+					<img class="mx-auto d-block img-fluid" src="${logo}" alt="Sunpower logo" />
 				</div>
 				<div id="site_map__footer" class="row p-1 mt-5 d-lg-flex justify-content-lg-around col-lg-6">
 					<ul class="col list-unstyled text-md-center">
@@ -137,4 +143,12 @@ export default function menu() {
   });
 }
 
-export { menu };
+export function checkFounders() {
+  if (location === '/index.html' || location === '/' || location === '/pages/propos.html') {
+    document.querySelector('#serge').src = serge;
+    document.querySelector('#hugo').src = hugo;
+    document.querySelector('#alex').src = alex;
+  }
+}
+
+export default { menu, checkFounders };
