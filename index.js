@@ -5,11 +5,12 @@ import scrollDown from './js/scrollDown';
 import formObserver from './js/contact_form';
 
 const location = window.location.pathname;
+console.log(location);
 
 if (
-  location === '/sunpower/pages/contact_ent_form.html' ||
-  location === '/sunpower/pages/contact_syndic_form.html' ||
-  location === '/sunpower/pages/contact_partic_form.html'
+  location === '/pages/contact_ent_form.html' ||
+  location === '/pages/contact_syndic_form.html' ||
+  location === '/pages/contact_partic_form.html'
 ) {
   formObserver();
 }
