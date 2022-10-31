@@ -54,10 +54,6 @@ export default function formObserver() {
     third_form.setAttribute('class', 'hide');
     third_form_btn.setAttribute('class', 'hide');
     third_step.setAttribute('class', 'hide');
-
-    if (window.innerWidth > 992) {
-      location.reload();
-    }
   }
   const voidCheck = () => {
     let check = 0;
