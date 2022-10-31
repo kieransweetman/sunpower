@@ -3,7 +3,8 @@
 
 export default function scrollDown() {
   const location = window.location.pathname;
-  if (location === '/index.html' || location === '/') {
+  //   console.log(location)
+  if (location === '/index.html' || location === '/' || location === '/pages/activities.html') {
     const sections = document.querySelectorAll('section');
     sections.forEach((section, i) => {
       section.insertAdjacentHTML(
