@@ -1,30 +1,42 @@
-export default function menu() {
-  let location = window.location.pathname;
+// Ce script ajoute le header et le footer sur chaque page + leurs comportements.
+
+
+//assets
+import logo from '../media/logo.png';
+import logo_mobile from '../media/logo_mobile.png';
+import hugo from '../media/photos/hugo.png';
+import alex from '../media/photos/alex.png';
+import serge from '../media/photos/serge.png';
+
+const location = window.location.pathname;
+
+export function menu() {
   document.body.insertAdjacentHTML(
     'afterbegin',
     `
 	<header class="d-none d-lg-block">
-			<nav class="navbar navbar-expand-lg">
+			<nav class="navbar navbar-expand-lg px-5">
 				<div class="container-fluid">
 					<a class="navbar-brand" href="${location === '/index.html' ? './' : '../'}index.html">
 						<img src="${location === '/index.html' ? './' : '../'}/media/logo.png" width="70" alt="Logo" />
+						
 					</a>
-					<ul class="navbar-nav container-fluid d-flex justify-content-evenly">
-						<li class="nav-item">
-							<a href="../pages/product.html#products" class="nav-link text-uppercase text-brand-primary"
+					<ul id="navLinks" class="navbar-nav container-fluid d-flex justify-content-evenly menu">
+						<li >
+							<a id="n_ombriere" href="../pages/product.html#products" class="nav-link text-uppercase text-brand-primary" 
 								>Ombrières solaires</a
 							>
 						</li>
-						<li><a href="../pages/product.html" class="nav-link text-uppercase text-brand-primary">Produits</a></li>
+						<li><a id="n_product" href="../pages/product.html" class="nav-link text-uppercase text-brand-primary">Produits</a></li>
 						<li>
-							<a href="../pages/map.html" class="nav-link text-uppercase text-brand-primary">Carte interactive</a>
+							<a id="n_map" href="../pages/map.html" class="nav-link text-uppercase text-brand-primary">Carte interactive</a>
 						</li>
 						<li>
-							<a href="../pages/activities.html" class="nav-link text-uppercase text-brand-primary">Activités</a>
+							<a id="n_activities" href="../pages/activities.html" class="nav-link text-uppercase text-brand-primary">Activités</a>
 						</li>
-						<li><a href="../pages/propos.html" class="nav-link text-uppercase text-brand-primary">À propos</a></li>
+						<li><a id="n_propos" href="../pages/propos.html" class="nav-link text-uppercase text-brand-primary">À propos</a></li>
 						<li>
-							<a href="../pages/contact.html" class="nav-link text-uppercase text-brand-primary">Nous contacter</a>
+							<a id="n_contact" href="../pages/contact.html" class="nav-link text-uppercase text-brand-primary">Nous contacter</a>
 						</li>
 					</ul>
 				</div>
@@ -35,9 +47,9 @@ export default function menu() {
 	<header class="bg-brand-secondary d-lg-none">
 			<!-- Navbar -->
 			<div class="container">
-				<nav class="navbar">
+				<nav id="" class="navbar">
 					<a class="navbar-brand" href="../index.html">
-						<img src="../media/logo_mobile.png" width="50" alt="Logo" />
+						<img src="${logo_mobile}" width="50" alt="Logo" />
 					</a>
 
 					<i class="bi bi-list text-brand-primary fs-0" id="burgerMenuIcon"></i>
@@ -79,9 +91,7 @@ export default function menu() {
 		<footer class="container-fluid p-3">
 			<div class="d-lg-flex">
 				<div id="logo__footer" class="row col-10 col-md-6 col-lg-3 mx-auto mx-lg-0 mt-5">
-					<img class="mx-auto d-block img-fluid" src="${
-            location === '/index.html' ? './' : '../'
-          }media/logo.png" alt="Sunpower logo" />
+					<img class="mx-auto d-block img-fluid" src="${logo}" alt="Sunpower logo" />
 				</div>
 				<div id="site_map__footer" class="row p-1 mt-5 d-lg-flex justify-content-lg-around col-lg-6">
 					<ul class="col list-unstyled text-md-center">
@@ -126,7 +136,7 @@ export default function menu() {
 			</div>
 		</footer>`
   );
-
+  //
   const burgerMenuIcon = document.getElementById('burgerMenuIcon');
 
   burgerMenuIcon.addEventListener('click', (event) => {
@@ -135,6 +145,25 @@ export default function menu() {
     burgerExpanded.classList.toggle('d-none');
     mainContent.classList.toggle('d-none');
   });
+
+  const navLinks = document.getElementById('navLinks').getElementsByTagName('li');
+
+  for (let i = 0; i < navLinks.length; i++) {
+    const link = navLinks[i].getElementsByTagName('a');
+
+    if (location.includes(link[0].getAttribute('id').slice(2))) {
+      link[0].classList.toggle('text-brand-primary');
+      link[0].classList.toggle('menuActive');
+    }
+  }
 }
 
-export { menu };
+export function checkFounders() {
+  if (location === '/index.html' || location === '/' || location === '/pages/propos.html') {
+    document.querySelector('#serge').src = serge;
+    document.querySelector('#hugo').src = hugo;
+    document.querySelector('#alex').src = alex;
+  }
+}
+
+export default { menu, checkFounders };

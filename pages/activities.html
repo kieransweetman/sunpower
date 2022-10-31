@@ -27,53 +27,64 @@
     ></script>
 
     <link rel="stylesheet" href="../style.css" />
-    <script src="../js/main.js" defer></script>
+    <script src="../dist/main.js" defer></script>
     <title>Activités</title>
   </head>
 
   <body>
-    <main class="grid container p-3">
-      <h1 class="fs-2 fw-bold text-uppercase text-center text-shadow py-4 mx-3 text-brand-primary">Activités</h1>
-      <ul class="list-unstyled mb-4">
-        <li class="p-2"><a class="text-brand-primary" href="">La R&D</a></li>
-        <li class="p-2"><a class="text-brand-primary" href="">L'aide aux montages de projets</a></li>
-        <li class="p-2"><a class="text-brand-primary" href="">La commercialisation des ombrières</a></li>
-      </ul>
-
-      <section id="R_D" class="row fs-8 mb-4">
-        <div class="col-10">
-          <h2 class="text-brand-primary fw-bolder fs-7 mb-0">La recherche & développement</h2>
-          <p>constituent l’ADN de la société.</p>
+    <main id="main" class="container">
+      <section id="frame1" class="d-flex flex-column justify-content-evenly p-3">
+        <p class="fs-2 fw-bold text-uppercase text-center text-shadow py-4 mx-3">Activités</p>
+        <div class="row mb-lg-5">
+          <p class="col-10 fs-8 fs-9">
+            <span class="text-brand-primary fw-bold fs-7">La recherche & développement</span>
+            <span class="paragraph-brand"> constituent l’ADN de la société.</span>
+          </p>
         </div>
-        <div class="col-10 offset-1 text-center g-3">
-          <p>
+        <div class="row mb-lg-5">
+          <p class="text-center col-10 offset-1 fs-8 fs-9">
             Nos produits sont en
             <span class="text-brand-ternary">constante amélioration</span>. En outre, nous participons à différents
             projets européens.
           </p>
         </div>
-        <div class="col-10 offset-2 text-end g-3">
-          <p>
+        <div class="row mb-lg-5">
+          <p class="text-end col-10 offset-2 fs-8 fs-9">
             Un de nos projets phare, que nous menons conjointement avec le CEA et le groupe PSA, est
             <span class="text-brand-ternary">un système de recharge par induction</span>
             à haute puissance sur des distances de plus de 1 mètre.
           </p>
         </div>
-
-        <p class="col-10 offset-1 text-center g-3">Nos principaux travaux concernent :</p>
-        <ul class="list-unstyled">
-          <li>L’électronique de puissance</li>
-          <li>Le développement des BMS (Battery Mangement System)</li>
-          <li>L’électronique embarquée de manière générale</li>
-        </ul>
-      </section>
-      <section id="projets" class="row fs-8 mb-4">
-        <div class="col-10">
-          <h2 class="fs-7 text-brand-primary fw-bold mb-0">L’aide aux montages de projets</h2>
-          <p>et à la réalisation de ceux-ci est au centre de nos préocupations.</p>
+        <div class="row mb-lg-5">
+          <p class="text-brand-primary fs-7 fw-bold">Nos principaux travaux concernent :</p>
+          <ul class="list-unstyled fs-8 px-4">
+            <li>L’électronique de puissance</li>
+            <li>Le développement des BMS (Battery Mangement System)</li>
+            <li>L’électronique embarquée de manière générale</li>
+          </ul>
         </div>
-        <div class="col-10 offset-1 text-center g-3">
-          <p>
+      </section>
+      <section id="frame2" class="d-flex flex-column justify-content-evenly p-3">
+        <div class="row mb-lg-5">
+          <p
+            class="col-10 fs-8 offset-lg-1 text-lg-center"
+            data-aos="fade-left"
+            data-aos-offset="200"
+            data-aos-delay="150"
+            data-aos-duration="1000"
+          >
+            <span class="text-brand-primary fw-bold fs-7">L’aide aux montages de projets</span>
+            et à la réalisation de ceux-ci est au centre de nos préocupations.
+          </p>
+        </div>
+        <div class="row mb-lg-5">
+          <p
+            class="text-center col-10 offset-1 fs-8 text-lg-end col-lg-8 offset-lg-4"
+            data-aos="zoom-in"
+            data-aos-offset="200"
+            data-aos-delay="450"
+            data-aos-duration="1000"
+            >
             Nous mettons
             <span class="text-brand-ternary">un point d’honneur</span>
             à accompagner nos clients de l’ébauche du projet à la livraison de leur produit
@@ -81,39 +92,88 @@
             .
           </p>
         </div>
-        <div class="col-10 offset-2 text-end g-3">
-          <p>
+        <div class="row mb-lg-5">
+          <p
+            class="text-end col-10 offset-2 fs-8 text-lg-center col-lg-8 offset-lg-2"
+            data-aos="fade-right"
+            data-aos-offset="200"
+            data-aos-delay="750"
+            data-aos-duration="1000"
+          >
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus varius pharetra mollis. Nam a luctus quam,
             sed condimentum risus. Donec venenatis nibh in lorem blandit, vitae rutrum nisi sollicitudin.
           </p>
         </div>
       </section>
-      <section class="row fs-8">
-        <div class="col-10">
-          <h2 class="text-brand-primary fw-bold mb-0 fs-7">Les ombrières solaires</h2>
-          <p>et leur commercialisation est la clé de voute de notre activité à ce jour.</p>
+
+      <section id="frame3" class="d-flex flex-column justify-content-evenly p-3">
+        <div class="row mb-lg-5">
+          <p
+            class="col-10 fs-8"
+            data-aos="fade-left"
+            data-aos-offset="200"
+            data-aos-delay="150"
+            data-aos-duration="1000"
+          >
+            <span class="text-brand-primary fw-bold fs-7">Les ombrières solaires</span>
+
+            et leur commercialisation sont la clé de voute de notre activité à ce jour.
+          </p>
         </div>
-        <div class="col-10 offset-1 text-center g-3">
-          <p>
-            Le projet est soutenu par
-            <a href="" class="text-brand-primary">différents partenaires</a>
-            du monde de
+        <div class="row mb-lg-5">
+          <p
+            class="text-center col-10 offset-1 fs-8 text-lg-end col-lg-8 offset-lg-4"
+            data-aos="zoom-in"
+            data-aos-offset="200"
+            data-aos-delay="450"
+            data-aos-duration="1000"
+          >
+            Le projet est soutenu par différents partenaires du monde de
             <span class="text-brand-ternary">l’énergie renouvelable</span>
             et de la technologie.
           </p>
         </div>
-        <div class="col-10 offset-2 text-end g-3">
-          <p>
+        <div class="row mb-lg-5">
+          <p
+            class="text-end col-10 offset-2 fs-8 text-lg-center col-lg-8 offset-lg-2"
+            data-aos="fade-right"
+            data-aos-offset="200"
+            data-aos-delay="750"
+            data-aos-duration="1000"
+          >
+            Un de nos projets phare, que nous menons conjointement avec le CEA et le groupe PSA, est
+            <span class="text-brand-ternary">un système de recharge par induction</span>
+            à haute puissance sur des distances de plus de 1 mètre.
+          </p>
+        </div>
+      </section>
+      <section id="frame4" class="d-flex flex-column justify-content-evenly p-3">
+        <div class="row mb-lg-5">
+          <p
+            class="text-center col-10 offset-1 fs-8 text-lg-start col-lg-8 offset-lg-0"
+            data-aos="zoom-out"
+            data-aos-offset="200"
+            data-aos-delay="150"
+            data-aos-duration="1000"
+          >
             Nous avons levé des fonds conséquents grâce à la confiance accordée par ces acteurs et, par la suite, grâce
             à la satisfaction de nos clients en Occitanie et plus particulièrement dans l’agglomération de Montpellier.
           </p>
         </div>
 
-        <p class="col-10 offset-1 text-center g-3">
-          La ville de Toulouse s’est ainsi récemment positionnée pour l’installation d’ombrières sur son territoire et
-          l’activité générale
-          <span class="text-brand-ternary">a le vent en poupe</span>.
-        </p>
+        <div class="row mb-lg-5">
+          <p
+            class="text-center col-10 offset-1 fs-8 text-lg-center col-lg-8 offset-lg-2"
+            data-aos="zoom-out"
+            data-aos-offset="200"
+            data-aos-delay="450"
+            data-aos-duration="1000"
+          >
+            La ville de Toulouse s’est ainsi récemment positionnée pour l’installation d’ombrières sur son territoire et
+            l’activité générale
+            <span class="text-brand-ternary">a le vent en poupe..</span>
+          </p>
+        </div>
       </section>
     </main>
   </body>

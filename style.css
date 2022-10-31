@@ -1,7 +1,10 @@
 @import url('https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css');
 
 body {
-  background-color: #d7d7d7;
+  /* background-color: #d7d7d7; */
+   background-size: cover;
+  background-image: url('../media/background.png'); 
+  background-attachment: fixed;
 }
 
 @font-face {
@@ -27,8 +30,10 @@ header {
 }
 
 #frame2,
-#frame3 {
+#frame3,
+#frame4 {
   height: 100vh;
+
 }
 
 body {
@@ -97,7 +102,8 @@ footer {
   font-size: 16px;
 }
 
-.fs-8 {
+.fs-8,
+.fs-9 {
   font-size: 11px;
 }
 
@@ -138,7 +144,8 @@ footer {
 
   #frame1,
   #frame2,
-  #frame3 {
+  #frame3,
+  #frame4 {
     height: auto;
   }
 
@@ -154,4 +161,77 @@ footer {
   h2 {
     font-size: 24px;
   }
+
+  .fs-9 {
+    font-size: 24px;
+  }
+
+  .vh-75 {
+    height: 85vh;
+  }
+
+  .vh-90 {
+    height: 90vh;
+  }
+
+  .text-lg-uppercase {
+    text-transform: uppercase;
+    line-height: 48px;
+  }
+
+  h3 {
+    font-size: 32px;
+  }
+
+  .fs-lg-h2 {
+    font-size: 36px;
+  }
+
+  .vh-75 {
+    height: 85vh;
+  }
+
+  #A_R_D,
+  #A_projets,
+  #A_ombrière,
+  #collab {
+    height: 100vh;
+  }
+
+  #durabilité i,
+  #fiabilité i,
+  #energie i {
+    font-size: 100px;
+  }
+}
+
+
+/* Navbar animation and active state */
+.menu {
+  text-align: center;
+}
+
+.menu li {
+  position: relative;
+}
+
+.menu li::after {
+  content: ' ';
+  position: absolute;
+  transform: translateX(-50%);
+  background-color: #358c84;
+  width: 0;
+  height: 3px;
+  transition: all 250ms ease-out;
+}
+
+.menu li:hover::after {
+  width: 100%;
+}
+
+.menuActive {
+  text-decoration: underline;
+  text-underline-offset: 0.85em;
+  text-decoration-color: #358c84;
+  text-decoration-thickness: 3px;
 }
