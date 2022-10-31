@@ -108,7 +108,13 @@
       </section>
       <!-- Second frame -->
       <section id="frame2" class="d-flex flex-column justify-content-evenly p-3">
-        <div class="row mb-lg-5">
+        <div
+          class="row mb-lg-5"
+          data-aos="fade-down"
+          data-aos-offset="200"
+          data-aos-delay="150"
+          data-aos-duration="1000"
+        >
           <p class="col-10 text-center offset-1 fs-8 col-lg-8 text-lg-start offset-lg-0">
             <span class="text-brand-primary fw-bold fs-7">Chaque borne</span
             ><span class="paragraph-brand">
@@ -118,7 +124,7 @@
             </span>
           </p>
         </div>
-        <div class="row">
+        <div class="row" data-aos="fade-left" data-aos-offset="200" data-aos-delay="350" data-aos-duration="1000">
           <p class="mb-4 col-10 fs-8 text-lg-center col-lg-8 offset-lg-2">
             <span class="text-brand-primary fw-bold fs-7">Une carte interactive</span><br />
             est à disposition pour vous permettre de connaître la localisation de chaque ombrière et le nombre de bornes
@@ -127,9 +133,10 @@
         </div>
         <div
           class="row position-relative p-2 d-lg-none"
-          data-aos="flip-up"
-          data-aos-delay="300"
-          data-aos-duration="700"
+          data-aos="fade-up"
+          data-aos-offset="200"
+          data-aos-delay="550"
+          data-aos-duration="1000"
         >
           <img src="../media/map.png" class="img-fluid opacity-75 p-0 rounded" alt="Carte interactive" />
           <div class="position-absolute h-100 w-100 d-flex justify-content-center align-items-center">
@@ -152,27 +159,33 @@
       <section id="frame3" class="d-flex flex-column justify-content-evenly p-3 d-lg-none">
         <p class="text-brand-primary fw-bold text-uppercase text-center fs-7">La société Sunpower</p>
 
-        <div class="row mb-lg-5">
+        <div class="row mb-lg-5" data-aos="zoom-in">
           <p class="mb-4 col-10 col-lg-8 fs-8 offset-lg-2">
             <span class="text-brand-primary fw-bold fs-7">Fondée en 2013 ,</span>
             notre société Sunpower est basée à Grenoble. Son capital est de 10 millions d’euros.
           </p>
         </div>
-        <div class="row mb-lg-5" data-aos="fade-up" data-aos-offset="200" data-aos-delay="150" data-aos-duration="1000">
+        <div class="row mb-lg-5">
           <div class="col-4">
             <img id="serge" src="" alt="Serge Turing" />
           </div>
           <div class="col-8 mb-lg-5">
-            <p class="text-end fs-8">
+            <p
+              class="text-end fs-8"
+              data-aos="fade-left"
+              data-aos-offset="200"
+              data-aos-delay="150"
+              data-aos-duration="1000"
+            >
               <span class="fs-7 text-brand-primary text-shadow fw-bold text-capitalize">Serge turing</span>
               <br />Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
               et
             </p>
           </div>
         </div>
-        <div class="row mb-lg-5" data-aos="fade-up" data-aos-offset="200" data-aos-delay="300" data-aos-duration="1000">
+        <div class="row mb-lg-5">
           <div class="col-8">
-            <p class="fs-8">
+            <p class="fs-8" data-aos="fade-right" data-aos-offset="200" data-aos-delay="450" data-aos-duration="1000">
               <span class="fs-7 text-brand-primary text-shadow fw-bold text-capitalize">Hugo Oppenheimer</span
               ><br />Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
               et
@@ -182,12 +195,18 @@
             <img id="hugo" src="" alt="Hugo Oppenheimer" />
           </div>
         </div>
-        <div class="row mb-lg-5" data-aos="fade-up" data-aos-offset="200" data-aos-delay="600" data-aos-duration="1000">
+        <div class="row mb-lg-5">
           <div class="col-4">
             <img id="alex" src="" alt="Alex Pareneinstein" />
           </div>
           <div class="col-8">
-            <p class="text-end fs-8">
+            <p
+              class="text-end fs-8"
+              data-aos="fade-left"
+              data-aos-offset="200"
+              data-aos-delay="750"
+              data-aos-duration="1000"
+            >
               <span class="fs-7 text-brand-primary text-shadow fw-bold text-capitalize">Alex Pareneinstein</span
               ><br />Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
               et
@@ -199,31 +218,29 @@
           <ul class="list-unstyled fs-8 px-4">
             <li
               data-aos="fade-left"
-              data-aos-duration="1000"
               data-aos-delay="1050"
               data-aos-anchor-placement="top-bottom"
+              data-aos-duration="1000"
             >
               <span class="text-brand-ternary">30M d’euros</span> de levée de fond
             </li>
             <li
               data-aos="fade-left"
               data-aos-delay="1250"
-              data-aos-duration="1000"
               data-aos-anchor-placement="top-bottom"
+              data-aos-duration="1000"
             >
               <span class="text-brand-ternary">2M d’euros</span> d’aide de BPIFrance
             </li>
             <li
               data-aos="fade-left"
               data-aos-delay="1450"
-              data-aos-duration="1000"
               data-aos-anchor-placement="top-bottom"
+              data-aos-duration="1000"
             >
-              <!-- attention espace non voulu à cause du formateur, à régler avec linter -->
               Collaboration avec l'<a href="https://www.ines-solaire.org/" class="text-brand-primary">INES</a>, le
               <a href="https://www.cea.fr/" class="text-brand-primary">CEA</a>
-              et l’
-              <a href="https://www.ademe.fr/" class="text-brand-primary">ADEME</a>
+              et l’<a href="https://www.ademe.fr/" class="text-brand-primary">ADEME</a>
             </li>
           </ul>
         </div>
