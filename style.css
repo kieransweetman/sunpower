@@ -180,3 +180,33 @@ footer {
     font-size: 100px;
   }
 }
+
+
+.menu {
+  text-align: center;
+}
+
+.menu li {
+  position: relative;
+}
+
+.menu li::after {
+  content: ' ';
+  position: absolute;
+  transform: translateX(-50%);
+  background-color: #358c84;
+  width: 0;
+  height: 3px;
+  transition: all 250ms ease-out;
+}
+
+.menu li:hover::after {
+  width: 100%;
+}
+
+.menuActive {
+  text-decoration: underline;
+  text-underline-offset: 0.85em;
+  text-decoration-color: #358c84;
+  text-decoration-thickness: 3px;
+}
