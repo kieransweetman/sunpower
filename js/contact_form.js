@@ -1,4 +1,4 @@
-import { doc } from 'prettier';
+
 
 export default function formObserver() {
   const first_form = document.querySelector('#first_form');
@@ -137,6 +137,8 @@ export default function formObserver() {
       resume.appendChild(div);
     }
   };
+
+  
   first_form_btn.addEventListener('click', () => {
     first_next();
   });
