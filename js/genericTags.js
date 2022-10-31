@@ -143,12 +143,12 @@ export function menu() {
     mainContent.classList.toggle('d-none');
   });
 
-  //
+  
   const navLinks = document.getElementById('navLinks').getElementsByTagName('li');
 
   for (let i = 0; i < navLinks.length; i++) {
     const link = navLinks[i].getElementsByTagName('a');
-
+	
     if (location.includes(link[0].getAttribute('id').slice(2))) {
       link[0].classList.toggle('text-brand-primary');
       link[0].classList.toggle('menuActive');
