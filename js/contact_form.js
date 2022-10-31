@@ -1,5 +1,3 @@
-
-
 export default function formObserver() {
   const first_form = document.querySelector('#first_form');
   const second_form = document.querySelector('#second_form');
@@ -138,7 +136,6 @@ export default function formObserver() {
     }
   };
 
-  
   first_form_btn.addEventListener('click', () => {
     first_next();
   });
@@ -150,7 +147,7 @@ export default function formObserver() {
     }
   });
   third_form_btn.addEventListener('click', (e) => {
-    if(e.target.getAttribute('alt') === 'back'){
+    if (e.target.getAttribute('alt') === 'back') {
       third_back();
     } else {
       voidCheck();
