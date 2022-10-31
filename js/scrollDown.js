@@ -1,4 +1,4 @@
-// Ajout d'un bouton pour chaque frame de la homepage pour permettre de naviguer jusqu'à la prochaine, sauf pour la dernière (pas de prochaine) le bouton remontera à la première.
+//Ajout d'un bouton pour chaque frame de la homepage pour permettre de naviguer jusqu'à la prochaine, sauf pour la dernière (pas de prochaine) le bouton remontera à la première et les chevrons seront dans le bon sens.
 // Permet d'ajouter autant de frame que désiré sans se soucier de dupliquer le code du bouton à chaque fois
 
 export default function scrollDown() {

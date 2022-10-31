@@ -1,3 +1,6 @@
+// Ce script ajoute le header et le footer sur chaque page + leurs comportements.
+
+
 //assets
 import logo from '../media/logo.png';
 import logo_mobile from '../media/logo_mobile.png';

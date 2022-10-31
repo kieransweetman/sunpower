@@ -27,16 +27,13 @@ header {
 
 #frame1 {
   height: 90vh;
-  /* background-color: #d7d7d7; */
-  /* opacity: .8; */
 }
 
 #frame2,
 #frame3,
 #frame4 {
   height: 100vh;
-  /* background-color: #d7d7d7;
-  opacity: .8; */
+
 }
 
 body {
@@ -208,6 +205,8 @@ footer {
   }
 }
 
+
+/* Navbar animation and active state */
 .menu {
   text-align: center;
 }
