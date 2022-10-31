@@ -27,53 +27,61 @@
     ></script>
 
     <link rel="stylesheet" href="../style.css" />
-    <script src="../js/main.js" defer></script>
+    <script src="../dist/main.js" defer></script>
     <title>À propos</title>
   </head>
   <body>
-    <main id="main" class="text-center p-4">
-      <h1>À propos</h1>
+    <main id="main" class="container-lg text-center p-4">
+      <h1 class="mt-5 text-uppercase text-brand-primary fw-bold">À propos</h1>
       <section class="p-4">
-        <p>
-          <span>Fondée en 2013</span>, notre société Sunpower est basée à Grenoble. Son capital est de 10 millions
-          d’euros.
-        </p>
-        <div class="mt-5">
-          <img class="float-start" src="../media/photos/serge.png" alt="Serge turing" />
-          <h3>Serge Turing</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et</p>
+        <div class="vh-75 d-lg-flex flex-column justify-content-center align-items-center  ">
+          <h2 class="text-uppercase text-brand-primary fw-bolder ">la société</h2>
+          <p class="fs-8  text-shadow text-brand-primary">
+            <span class="text-brand-primary">Fondée en 2013</span>, notre société Sunpower est basée à Grenoble. <br> Son
+            capital est de 10 millions d’euros.
+          </p>
         </div>
-        <div class="mt-5">
-          <img class="float-end" src="../media/photos/hugo.png" alt="Hugo Oppenheimer" />
-          <h3>Hugo Oppenheimer</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et</p>
-        </div>
-        <div class="mt-5">
-          <img class="float-start" src="../media/photos/alex.png" alt="Alex Pareneinstein" />
-          <h3>Alex Pareneinstein</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et</p>
-        </div>
-      </section>
-      <section class="grid gap-5 row p-3">
-        <h2>Historique</h2>
-        <div class="bg-light py-3 rounded">
-          <img src="../media/svg/people_group.svg" alt=" group of people" />
-          <p>Collaboration avec <span class="text-brand-ternary fw-bolder">l’INES</span></p>
-          <p>le <span class="text-brand-ternary fw-bolder">CEA</span></p>
-          <p>et <span class="text-brand-ternary fw-bolder">l’ADEME</span></p>
-          <div class="p-3">
-            <img class="" src="../media/photos/1024px-Logo_Montpellier_Méditerranée_Métropole.png" alt="" />
-            <img class="" src="../media/photos/Logo_Toulouse_Metropole.png" alt="" />
+        <div class="vh-75 d-lg-flex flex-column justify-content-lg-evenly">
+          <h2 class="text-uppercase text-brand-primary fw-bolder">les fondatateurs</h2>
+          <div class="mt-5 col-lg-8 mx-auto ">
+            <img class="float-start" id="serge" src="" alt="Serge turing" />
+            <h3 class="text-lg-end text-shadow text-brand-primary">Serge Turing</h3>
+            <p class="text-lg-end">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et</p>
+          </div>
+          <div class="mt-5 col-lg-8 mx-auto ">
+            <img class="float-end" id="hugo" src="" alt="Hugo Oppenheimer" />
+            <h3 class="text-lg-start text-shadow text-brand-primary">Hugo Oppenheimer</h3>
+            <p class="text-lg-start">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et</p>
+          </div>
+          <div class="mt-5 col-lg-8 mx-auto ">
+            <img class="float-start" id="alex" src="" alt="Alex Pareneinstein" />
+            <h3 class="text-lg-end text-shadow text-brand-primary">Alex Pareneinstein</h3>
+            <p class="text-lg-end">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et</p>
           </div>
         </div>
-        <div class="bg-light py-3 rounded">
+        </section>
+      <section id="#Historique" class="grid gap-5 row p-3  text-uppercase text-brand-primary ">
+        <h2>Historique</h2>
+        <div class="mx-auto col-lg-3 bg-light py-3 rounded">
+          <img src="../media/svg/people_group.svg" alt=" group of people" />
+          <p>Nos Collaborateurs</p>
+          
+          <div class="p-3 grid ">
+            <img class="img-fluid w-25" src="../media/ademe.gif" alt="">
+            <img class="img-fluid w-25" src="../media/cea.gif" alt="">
+            <img class="img-fluid w-25" src="../media/ines.gif" alt="">
+            <img class="img-fluid w-25 mt-3" src="../media/photos/1024px-Logo_Montpellier_Méditerranée_Métropole.png" alt="" />
+            <img class="img-fluid w-25 mt-3" src="../media/photos/Logo_Toulouse_Metropole.png" alt="" />
+          </div>
+        </div>
+        <div class="mx-auto col-lg-3 bg-light py-3 rounded">
           <img class="p-3" src="../media/svg/Vector.svg" alt="arrow" />
           <p><span class="text-brand-ternary fw-bolder">30M d'euros</span> de levés</p>
           <p>+</p>
           <p><span>2M d'euros</span> d'aide de BPIfrance</p>
         </div>
-        <div class="bg-light py-3 rounded">
-          <img class="p-3" src="../media/svg/Vector-1.svg" alt="piggy bank" />
+        <div class="mx-auto col-lg-3 bg-light py-3 rounded  ">
+          <img class="p-3 mt-lg-5" src="../media/svg/Vector-1.svg" alt="piggy bank" />
           <p><span class="text-brand-ternary fw-bolder">10m+</span> deuros de capital généré</p>
         </div>
       </section>

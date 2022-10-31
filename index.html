@@ -28,7 +28,7 @@
 
     <link rel="stylesheet" href="./style.css" />
 
-    <script src="./js/main.js" defer></script>
+    <script src="./dist/main.js" defer></script>
 
     <title>Page d'accueil</title>
   </head>
@@ -36,61 +36,72 @@
     <main id="main" class="container">
       <!-- First frame -->
       <section id="frame1" class="d-flex flex-column justify-content-evenly p-3 d-lg-block">
-        <p class="fs-2 fw-bold text-uppercase text-center text-shadow py-4 mx-3">
-          L'énergie <span class="text-brand-ternary">verte</span> &
-          <span class="text-brand-ternary">renouvelable</span> à portée de main
-        </p>
-        <div class="row mb-lg-5">
-          <p class="col-10 fs-8">
-            <span class="text-brand-primary fw-bold fs-7">Nous concevons</span
-            ><span class="paragraph-brand">
-              et commercialisons des panneaux solaires à haut rendement. Fort de plusieurs années de conception, nous
-              proposons aujourd’hui notre fer de lance :</span
-            >
-          </p>
-        </div>
-        <div class="row d-none d-lg-block mb-5 mb-lg-5 hover-zoom">
-          <div class="col-6 offset-3">
-            <img src="../media/homepagePanel.png" class="img-fluid rounded" />
+        <div class="mt-lg-5">
+          <h1 class="fs-2 fw-bold text-uppercase text-center text-shadow py-4 mx-3">
+            L'énergie <span class="text-brand-ternary">verte</span> &
+            <span class="text-brand-ternary">renouvelable</span> à portée de main
+          </h1>
+          <div class="row mb-lg-5">
+            <p class="col-10 fs-8">
+              <span class="text-brand-primary fw-bold fs-7">Nous concevons</span
+              ><span class="paragraph-brand">
+                et commercialisons des panneaux solaires à haut rendement. Fort de plusieurs années de conception, nous
+                proposons aujourd’hui notre fer de lance :</span
+              >
+            </p>
+          </div>
+          <div class="row d-none d-lg-block mb-5 mb-lg-5 hover-zoom">
+            <div class="col-6 offset-3">
+              <img src="../media/homepagePanel.png" class="img-fluid rounded" />
+            </div>
+          </div>
+          <div class="row mb-lg-5">
+            <p class="text-center col-10 offset-1 fs-8 text-lg-end col-lg-8 offset-lg-4">
+              <span class="text-brand-primary fw-bold fs-7">L’ombrière solaire</span><br />
+              Avec ce bijou de technologie, n’importe quelle véhicule électrique pourra recharger ses batteries avec une
+              <span class="text-brand-ternary">énergie verte et non polluante</span>
+              tout en jouant le rôle d’abri.
+            </p>
           </div>
         </div>
-        <div class="row mb-lg-5">
-          <p class="text-center col-10 offset-1 fs-8 text-lg-end col-lg-8 offset-lg-4">
-            <span class="text-brand-primary fw-bold fs-7">L’ombrière solaire</span><br />
-            Avec ce bijou de technologie, n’importe quelle véhicule électrique pourra recharger ses batteries avec une
-            <span class="text-brand-ternary">énergie verte et non polluante</span>
-            tout en jouant le rôle d’abri.
-          </p>
-        </div>
-        <div class="row mb-lg-3 mt-lg-5 pt-lg-5">
-          <p class="text-end col-10 offset-2 fs-8 text-lg-center col-lg-8 offset-lg-2">
-            <span class="text-brand-primary fw-bold fs-7">Nos collaborateurs</span><br />
-            et partenaires principaux sont l’<a href="https://www.ademe.fr/" class="text-brand-primary">ADEME</a>, l’<a
-              href="https://www.ines-solaire.org/"
-              class="text-brand-primary"
-              >INES</a
-            >
-            et le
-            <a href="https://www.cea.fr/" class="text-brand-primary">CEA</a>. Certains nous soutiennent depuis de
-            nombreuses années et sont gages de confiance pour nos clients.
-          </p>
-        </div>
-        <div class="container mb-lg-5 d-lg-block d-none">
-          <div class="row">
-            <div class="col-2 offset-3">
-              <a href="https://www.ines-solaire.org/">
-                <img src="../media/ademe.gif" alt="ADEME" class="img-fluid" />
-              </a>
-            </div>
-            <div class="col-2">
-              <a href="https://www.cea.fr/">
-                <img src="../media/cea.gif" alt="CEA" class="img-fluid" />
-              </a>
-            </div>
-            <div class="col-2">
-              <a href="https://www.ademe.fr/">
-                <img src="../media/ines.gif" alt="INES" class="img-fluid" />
-              </a>
+        <div id="collab" class="d-lg-flex flex-column justify-content-lg-center gap-5">
+          <div class="row mb-lg-3">
+            <p class="text-end col-10 offset-2 fs-8 text-lg-center col-lg-8 offset-lg-2">
+              <span class="text-brand-primary fw-bold fs-7">Nos collaborateurs</span><br />
+              et partenaires principaux sont l’<a href="https://www.ademe.fr/" class="text-brand-primary">ADEME</a>,
+              l’<a href="https://www.ines-solaire.org/" class="text-brand-primary">INES</a>
+              et le
+              <a href="https://www.cea.fr/" class="text-brand-primary">CEA</a>. Certains nous soutiennent depuis de
+              nombreuses années et sont gages de confiance pour nos clients.
+            </p>
+          </div>
+          <div class="container mb-lg-5 d-lg-block d-none">
+            <div class="d-lg-flex justify-content-lg-evenly">
+              <div class="col-2 text-center">
+                <a href="https://www.ines-solaire.org/">
+                  <img src="../media/ademe.gif" alt="ADEME" class="img-fluid" />
+                </a>
+              </div>
+              <div class="col-2 text-center">
+                <a href="https://www.cea.fr/">
+                  <img src="../media/cea.gif" alt="CEA" class="img-fluid" />
+                </a>
+              </div>
+              <div class="col-2 text-center">
+                <a href="https://www.ademe.fr/">
+                  <img src="../media/ines.gif" alt="INES" class="img-fluid" />
+                </a>
+              </div>
+              <div class="col-2 text-center">
+                <a href="">
+                  <img class="img-fluid" src="../media/photos/Logo_Toulouse_Metropole.png" alt="" srcset="" />
+                </a>
+              </div>
+              <div class="col-2 text-center">
+                <a href="">
+                  <img src="../media/photos/1024px-Logo_Montpellier_Méditerranée_Métropole.png" alt="" srcset="" />
+                </a>
+              </div>
             </div>
           </div>
         </div>
@@ -156,7 +167,7 @@
         </div>
         <div class="row mb-lg-5">
           <div class="col-4">
-            <img src="../media/serge.png" alt="Serge Turing" />
+            <img id="serge" src="" alt="Serge Turing" />
           </div>
           <div class="col-8 mb-lg-5">
             <p
@@ -181,12 +192,12 @@
             </p>
           </div>
           <div class="col-4 text-lg-end">
-            <img src="../media/hugo.png" alt="Hugo Oppenheimer" />
+            <img id="hugo" src="" alt="Hugo Oppenheimer" />
           </div>
         </div>
         <div class="row mb-lg-5">
           <div class="col-4">
-            <img src="../media/alex.png" alt="Alex Pareneinstein" />
+            <img id="alex" src="" alt="Alex Pareneinstein" />
           </div>
           <div class="col-8">
             <p

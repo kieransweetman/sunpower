@@ -42,6 +42,7 @@ header {
 body {
   font-family: 'Space';
 }
+
 footer {
   background-color: #d9bf71;
 }
@@ -129,6 +130,7 @@ footer {
   position: relative;
   height: 0;
 }
+
 .map-container iframe {
   left: 0;
   top: 0;
@@ -154,9 +156,11 @@ footer {
   .fs-8 {
     font-size: 20px;
   }
+
   h1 {
     font-size: 48px;
   }
+
   h2 {
     font-size: 24px;
   }
@@ -177,14 +181,42 @@ footer {
     text-transform: uppercase;
     line-height: 48px;
   }
+
+  h3 {
+    font-size: 32px;
+  }
+
+  .fs-lg-h2 {
+    font-size: 36px;
+  }
+
+  .vh-75 {
+    height: 85vh;
+  }
+
+  #A_R_D,
+  #A_projets,
+  #A_ombrière,
+  #collab {
+    height: 100vh;
+  }
+
+  #durabilité i,
+  #fiabilité i,
+  #energie i {
+    font-size: 100px;
+  }
 }
+
 
 .menu {
   text-align: center;
 }
+
 .menu li {
   position: relative;
 }
+
 .menu li::after {
   content: ' ';
   position: absolute;
@@ -194,6 +226,7 @@ footer {
   height: 3px;
   transition: all 250ms ease-out;
 }
+
 .menu li:hover::after {
   width: 100%;
 }
