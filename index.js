@@ -9,8 +9,8 @@ console.log(location);
 
 if (
   location === '/pages/contact_ent_form.html' ||
-  location === '/pages/contact_syndic_form.html' ||
-  location === '/pages/contact_partic_form.html'
+  location === '/pages/contact_syn_form.html' ||
+  location === '/pages/contact_gen_form.html'
 ) {
   formObserver();
 }
