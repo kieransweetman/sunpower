@@ -19,20 +19,20 @@ export function menu() {
 					</a>
 					<ul class="navbar-nav container-fluid d-flex justify-content-evenly">
 						<li class="nav-item">
-							<a href="../pages/product.html#products" class="nav-link text-uppercase text-brand-primary"
+							<a href="/sunpower/pages/product.html#products" class="nav-link text-uppercase text-brand-primary"
 								>Ombrières solaires</a
 							>
 						</li>
-						<li><a href="../pages/product.html" class="nav-link text-uppercase text-brand-primary">Produits</a></li>
+						<li><a href="/sunpower/pages/product.html" class="nav-link text-uppercase text-brand-primary">Produits</a></li>
 						<li>
-							<a href="../pages/map.html" class="nav-link text-uppercase text-brand-primary">Carte interactive</a>
+							<a href="/sunpower/pages/map.html" class="nav-link text-uppercase text-brand-primary">Carte interactive</a>
 						</li>
 						<li>
-							<a href="../pages/activities.html" class="nav-link text-uppercase text-brand-primary">Activités</a>
+							<a href="/sunpower/pages/activities.html" class="nav-link text-uppercase text-brand-primary">Activités</a>
 						</li>
-						<li><a href="../pages/propos.html" class="nav-link text-uppercase text-brand-primary">À propos</a></li>
+						<li><a href="/sunpower/pages/propos.html" class="nav-link text-uppercase text-brand-primary">À propos</a></li>
 						<li>
-							<a href="../pages/contact.html" class="nav-link text-uppercase text-brand-primary">Nous contacter</a>
+							<a href="/sunpower/pages/contact.html" class="nav-link text-uppercase text-brand-primary">Nous contacter</a>
 						</li>
 					</ul>
 				</div>
@@ -56,25 +56,25 @@ export function menu() {
 		<div id="burgerExpanded" class="d-none">
 			<ul class="container list-unstyled text-center text-shadow d-flex flex-column justify-content-evenly">
 				<li class="fs-4">
-					<a href="../pages/product.html#products" class="text-uppercase text-brand-primary">Ombrières solaires</a>
+					<a href="/sunpower/pages/product.html#products" class="text-uppercase text-brand-primary">Ombrières solaires</a>
 				</li>
 				<li><hr class="text-brand-ternary border-5 opacity-75" /></li>
 				<li class="fs-4">
-					<a href="../pages/product.html" class="text-uppercase text-brand-primary">Produits</a>
+					<a href="/sunpower/pages/product.html" class="text-uppercase text-brand-primary">Produits</a>
 				</li>
 				<li class="fs-4">
-					<a href="../pages/map.html" class="text-uppercase text-brand-primary">Carte interactive</a>
+					<a href="/sunpower/pages/map.html" class="text-uppercase text-brand-primary">Carte interactive</a>
 				</li>
 				<li class="fs-4">
-					<a href="../pages/activities.html" class="text-uppercase text-brand-primary">Activités</a>
+					<a href="/sunpower/pages/activities.html" class="text-uppercase text-brand-primary">Activités</a>
 				</li>
 
 				<li><hr class="text-brand-ternary border-5 opacity-75" /></li>
 				<li class="fs-4">
-					<a href="../pages/contact.html" class="text-uppercase text-brand-primary">Nous contacter</a>
+					<a href="/sunpower/pages/contact.html" class="text-uppercase text-brand-primary">Nous contacter</a>
 				</li>
 				<li class="fs-4">
-					<a href="../pages/propos.html" class="text-uppercase text-brand-primary">À propos</a>
+					<a href="/sunpower/pages/propos.html" class="text-uppercase text-brand-primary">À propos</a>
 				</li>
 			</ul>
 		</div>
@@ -92,26 +92,26 @@ export function menu() {
 				<div id="site_map__footer" class="row p-1 mt-5 d-lg-flex justify-content-lg-around col-lg-6">
 					<ul class="col list-unstyled text-md-center">
 						<li class="mb-3">
-							<a href="../pages/product.html" class="text-brand-primary text-shadow">Ombrières solaires</a>
+							<a href="/sunpower/pages/product.html" class="text-brand-primary text-shadow">Ombrières solaires</a>
 						</li>
 						<li class="mb-3">
-							<a href="../pages/map.html" class="text-brand-primary text-shadow">Carte interactive</a>
+							<a href="/sunpower/pages/map.html" class="text-brand-primary text-shadow">Carte interactive</a>
 						</li>
 						<li class="mb-3">
-							<a href="../pages/product.html#products" class="text-brand-primary text-shadow">Produits</a>
+							<a href="/sunpower/pages/product.html#products" class="text-brand-primary text-shadow">Produits</a>
 						</li>
 						<li class="mb-3">
-							<a href="../pages/activities.html" class="text-brand-primary text-shadow">Activités</a>
+							<a href="/sunpower/pages/activities.html" class="text-brand-primary text-shadow">Activités</a>
 						</li>
 					</ul>
 					<ul class="col list-unstyled text-md-center">
 						<li class="mb-3"><a href="../pages/propos.html" class="text-brand-primary text-shadow">À propos</a></li>
 						<li class="mb-3">
-							<a href="../pages/legalmentions.html" class="text-brand-primary text-shadow">Mentions légales</a>
+							<a href="/sunpower/pages/legalmentions.html" class="text-brand-primary text-shadow">Mentions légales</a>
 						</li>
 						<li class="mb-3"><a href="../pages/cgv.html" class="text-brand-primary text-shadow">CGV</a></li>
 						<li class="mb-3">
-							<a href="../pages/sitemap.html" class="text-brand-primary text-shadow">Plan du Site</a>
+							<a href="/sunpower/pages/sitemap.html" class="text-brand-primary text-shadow">Plan du Site</a>
 						</li>
 					</ul>
 				</div>
@@ -144,7 +144,8 @@ export function menu() {
 }
 
 export function checkFounders() {
-  if (location === '/index.html' || location === '/' || location === '/pages/propos.html') {
+  console.log(location);
+  if (location === '/sunpower/index.html' || location === '/sunpower/' || location === '/sunpower/pages/propos.html') {
     document.querySelector('#serge').src = serge;
     document.querySelector('#hugo').src = hugo;
     document.querySelector('#alex').src = alex;

@@ -1,6 +1,7 @@
 import { doc } from 'prettier';
 
 export default function formObserver() {
+
   const first_form = document.querySelector('#first_form');
   const second_form = document.querySelector('#second_form');
   const third_form = document.querySelector('#third_form');
@@ -17,6 +18,11 @@ export default function formObserver() {
   const steps = document.querySelector('#steps');
   const inputs = document.querySelectorAll('input');
   const desc = document.querySelector('#ent_form_desc');
+  const not_uploaded = document.querySelector("#not_uploaded")
+  const filename = document.querySelector("#filename")
+  const uploaded = document.querySelector("#uploaded")
+  const upload = document.getElementById('ent_form_upload')
+  const red_cross = document.getElementById('red_cross')
 
   const first_form_attr = first_form.getAttribute('class');
   const second_form_attr = second_form.getAttribute('class');
@@ -28,48 +34,31 @@ export default function formObserver() {
   const first_step_attr = first_step.getAttribute('class');
   const second_step_attr = second_step.getAttribute('class');
   const third_step_attr = third_step.getAttribute('class');
+  const not_uploaded_attr = not_uploaded.getAttribute('class');
+  const uploaded_attr = uploaded.getAttribute('class');
 
-  second_form.setAttribute('class', 'hide');
-  second_form_btn.setAttribute('class', 'hide');
-  second_step.setAttribute('class', 'hide');
-  third_form.setAttribute('class', 'hide');
-  third_form_btn.setAttribute('class', 'hide');
-  third_step.setAttribute('class', 'hide');
   resume_form.setAttribute('class', 'hide');
+  console.log(upload.value);
 
-  function first_next() {
-    first_form.setAttribute('class', 'hide');
-    first_form_btn.setAttribute('class', 'hide');
-    first_step.setAttribute('class', 'hide');
-    second_form.setAttribute('class', second_form_attr);
-    second_form_btn.setAttribute('class', second_form_btn_attr);
-    second_step.setAttribute('class', second_step_attr);
+  window.onresize = () => {
+    if (window.innerWidth >= 992){
+      location.reload();
+    }
   }
-  function second_back() {
+
+  if (window.innerWidth < 992) {
+
     second_form.setAttribute('class', 'hide');
     second_form_btn.setAttribute('class', 'hide');
     second_step.setAttribute('class', 'hide');
-    first_form.setAttribute('class', first_form_attr);
-    first_form_btn.setAttribute('class', first_form_btn_attr);
-    first_step.setAttribute('class', first_step_attr);
-  }
-  function second_next() {
-    second_form.setAttribute('class', 'hide');
-    second_form_btn.setAttribute('class', 'hide');
-    second_step.setAttribute('class', 'hide');
-    third_form.setAttribute('class', third_form_attr);
-    third_form_btn.setAttribute('class', third_form_btn_attr);
-    third_step.setAttribute('class', third_step_attr);
-  }
-  function third_back() {
     third_form.setAttribute('class', 'hide');
     third_form_btn.setAttribute('class', 'hide');
     third_step.setAttribute('class', 'hide');
-    second_form.setAttribute('class', second_form_attr);
-    second_form_btn.setAttribute('class', second_form_btn_attr);
-    second_step.setAttribute('class', second_step_attr);
-  }
 
+    if (window.innerWidth > 992) {
+      location.reload();
+    }
+  }
   const voidCheck = () => {
     let check = 0;
     inputs.forEach((input) => {
@@ -137,6 +126,40 @@ export default function formObserver() {
       resume.appendChild(div);
     }
   };
+
+  function first_next() {
+    first_form.setAttribute('class', 'hide');
+    first_form_btn.setAttribute('class', 'hide');
+    first_step.setAttribute('class', 'hide');
+    second_form.setAttribute('class', second_form_attr);
+    second_form_btn.setAttribute('class', second_form_btn_attr);
+    second_step.setAttribute('class', second_step_attr);
+  }
+  function second_back() {
+    second_form.setAttribute('class', 'hide');
+    second_form_btn.setAttribute('class', 'hide');
+    second_step.setAttribute('class', 'hide');
+    first_form.setAttribute('class', first_form_attr);
+    first_form_btn.setAttribute('class', first_form_btn_attr);
+    first_step.setAttribute('class', first_step_attr);
+  }
+  function second_next() {
+    second_form.setAttribute('class', 'hide');
+    second_form_btn.setAttribute('class', 'hide');
+    second_step.setAttribute('class', 'hide');
+    third_form.setAttribute('class', third_form_attr);
+    third_form_btn.setAttribute('class', third_form_btn_attr);
+    third_step.setAttribute('class', third_step_attr);
+  }
+  function third_back() {
+    third_form.setAttribute('class', 'hide');
+    third_form_btn.setAttribute('class', 'hide');
+    third_step.setAttribute('class', 'hide');
+    second_form.setAttribute('class', second_form_attr);
+    second_form_btn.setAttribute('class', second_form_btn_attr);
+    second_step.setAttribute('class', second_step_attr);
+  }
+
   first_form_btn.addEventListener('click', () => {
     first_next();
   });
@@ -154,6 +177,28 @@ export default function formObserver() {
       voidCheck();
     }
   });
+
+  const upload_show = () => {
+    if (upload.value !== ""){
+      not_uploaded.setAttribute("class", "hide")
+      uploaded.setAttribute("class", uploaded_attr)
+      filename.textContent = upload.value;
+    } else {
+      uploaded.setAttribute("class", "hide")
+      not_uploaded.setAttribute("class", not_uploaded_attr)
+    }
+  }
+
+  upload_show();
+
+  upload.onchange = () => {
+    upload_show();
+  }
+
+  red_cross.onclick = () => {
+    upload.value = "";
+    upload_show();
+  };
 }
 
 export { formObserver };
