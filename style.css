@@ -173,4 +173,10 @@ footer {
   #collab {
     height: 100vh;
   }
+
+  #durabilité i,
+  #fiabilité i,
+  #energie i {
+    font-size: 100px;
+  }
 }
