@@ -2,8 +2,8 @@
 
 body {
   /* background-color: #d7d7d7; */
-   background-size: cover;
-  background-image: url('../media/background.png'); 
+  background-size: cover;
+  background-image: url('../media/background.png');
   background-attachment: fixed;
 }
 
@@ -33,7 +33,6 @@ header {
 #frame3,
 #frame4 {
   height: 100vh;
-
 }
 
 body {
@@ -204,7 +203,6 @@ footer {
     font-size: 100px;
   }
 }
-
 
 /* Navbar animation and active state */
 .menu {

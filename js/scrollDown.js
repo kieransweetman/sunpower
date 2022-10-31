@@ -3,7 +3,7 @@
 
 export default function scrollDown() {
   const location = window.location.pathname;
-  //   console.log(location)
+
   if (location === '/index.html' || location === '/' || location === '/pages/activities.html') {
     const sections = document.querySelectorAll('section');
     sections.forEach((section, i) => {
