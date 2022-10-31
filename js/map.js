@@ -13,7 +13,7 @@ export default function mapGen(){
     }
 
     let locations = [
-        // ["Client: Pradeo<br>Nombre d'ombrelles: 3<br>Capacité: 12 Wh", 43.567044, 3.943067],
+        ["Client: Pradeo<br>Nombre d'ombrelles: 3<br>Capacité: 12 Wh", 43.567044, 3.943067],
         ["Client: Greenx<br>Nombre d'ombrelles: 7 <br> Capacité: 23 Wh", 43.57119189294555, 3.944850180592113],
         ["Client: E3 <br> Nombre d'ombrelles: 5 <br> Capacité: 18 Wh", 43.580029830572066, 3.930319133070283],
         ["Client: ExpX <br>Nombre d'ombrelles: 2<br>Capacité: 12 Wh", 43.5767955843162, 3.918006132209793],
@@ -47,7 +47,7 @@ export default function mapGen(){
         iconUrl: marker_icon,
         shadowUrl: marker_shadow,
     })
-    
+
     for (let i = 0; i < locations.length; i++) {
         let marker = new L.marker([locations[i][1], locations[i][2]],{icon:m}).bindPopup(locations[i][0])
         marker.addTo(map);
