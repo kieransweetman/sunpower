@@ -1,43 +1,49 @@
 <!DOCTYPE html>
 <html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<head>
-	<meta charset="UTF-8" />
-	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- bootstrap -->
 
-	<!-- bootstrap -->
+    <!-- icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css" />
 
-	<!-- icons -->
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css" />
+    <!-- css -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      crossorigin="anonymous"
+    />
 
-	<!-- css -->
-	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
-		integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous" />
+    <!-- js -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+      crossorigin="anonymous"
+      defer
+    ></script>
 
-	<!-- js -->
-	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
-		integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"
-		defer></script>
+    <link rel="stylesheet" href="../style.css" />
+    <script src="../js/main.js" defer></script>
+    <title>Carte interactive</title>
+  </head>
 
-	<link rel="stylesheet" href="../style.css" />
-	<script src="../js/main.js" defer></script>
-	<title>Carte interactive</title>
-</head>
+  <body>
+    <div class="title_map text-center text-brand-primary fw-bolder text-shadow fs-7 mb-0 py-4">
+      Retrouvez les localisations de notres ombrières
+    </div>
 
-<body>
-	<div class="title_map text-center text-brand-primary fw-bolder text-shadow fs-7 mb-0 py-4">
-		Retrouvez les localisations de notres ombrières
-	</div>
-
-	<div id="map" style="height: 85vh">
-		<a href="https://www.maptiler.com" style="position: flex"><img src="https://api.maptiler.com/resources/logo.svg"
-				alt="MapTiler logo" /></a>
-	</div>
-	<p>
-		<a href="https://www.maptiler.com/copyright/" target="_blank">&copy; MapTiler</a>
-		<a href="https://www.openstreetmap.org/copyright" target="_blank">&copy; OpenStreetMap contributors</a>
-	</p>
-</body>
-
+    <div id="map" style="height: 85vh">
+      <a href="https://www.maptiler.com" style="position: flex"
+        ><img src="https://api.maptiler.com/resources/logo.svg" alt="MapTiler logo"
+      /></a>
+    </div>
+    <p>
+      <a href="https://www.maptiler.com/copyright/" target="_blank">&copy; MapTiler</a>
+      <a href="https://www.openstreetmap.org/copyright" target="_blank">&copy; OpenStreetMap contributors</a>
+    </p>
+  </body>
 </html>
