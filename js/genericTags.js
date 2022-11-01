@@ -90,7 +90,7 @@ export function menu() {
 		<footer class="container-fluid p-3">
 			<div class="d-lg-flex">
 				<div id="logo__footer" class="row col-10 col-md-6 col-lg-3 mx-auto mx-lg-0 mt-5">
-					<img class="mx-auto d-block img-fluid" src="${logo}" alt="Sunpower logo" />
+					<a href="${location === '/index.html' ? './' : '../'}index.html"><img class="mx-auto d-block img-fluid" src="${logo}" alt="Sunpower logo" />
 				</div>
 				<div id="site_map__footer" class="row p-1 mt-5 d-lg-flex justify-content-lg-around col-lg-6">
 					<ul class="col list-unstyled text-md-center">
