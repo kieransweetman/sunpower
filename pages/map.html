@@ -34,41 +34,40 @@
 		<div class="px-3">
 			<form action="">
 				<div class="text-center w-100">
-					<button class="btn btn-secondary btn-block bg-brand-primary btn-sm px-3" type="button"
-						data-bs-toggle="collapse"
-						onclick="document.querySelector('#mapForm').classList.toggle('collapse')" id="button" alt="bouton pour ajouter les
+					<button class="btn btn-secondary btn-block bg-brand-primary btn-sm px-3 mb-3" type="button"
+						
+						 id="show_button" alt="bouton pour ajouter les
 				ombrières
-				solaires sur la carte">Ajouter les
-						ombrières
-						solaires</button>
+				solaires sur la carte">Ajouter un point</button>
 				</div>
-				<div class="collapse col-lg-6 mx-auto" id="mapForm">
+				<div class=" collapse col-lg-6 mx-auto" id="mapForm">
 					<div class="form-group">
 						<label for="client" class="text-brand-primary mt-3">Client :</label>
-						<input type="string" class="w-100 form-control form-control-sm"
+						<input name="client" type="string" class="w-100 form-control form-control-sm"
 							placeholder="ex. FlowerPower SA">
 					</div>
 					<div class="form-group">
 						<label for="latitude" class="text-brand-primary mt-2">Latitude :</label>
-						<input type="number" class="w-100 form-control form-control-sm" placeholder="ex. 43.458">
+						<input name="lat" type="number" class="w-100 form-control form-control-sm" placeholder="ex. 43.458">
 					</div>
 					<div class="form-group">
 						<label for="longitude" class="text-brand-primary mt-2">Longitude :</label>
-						<input type="number" class="w-100 form-control form-control-sm" placeholder="ex. 3.256">
+						<input name="long" type="number" class="w-100 form-control form-control-sm" placeholder="ex. 3.256">
 					</div>
 					<div class="form-group">
 						<label for="nombreOmbrelles" class="text-brand-primary mt-2">Nombre d'ombrelles :</label>
-						<input type="number" class="w-100 form-control form-control-sm" placeholder="ex. 6">
+						<input name="ombrières" type="number" class="w-100 form-control form-control-sm" placeholder="ex. 6">
 					</div>
 					<div class="form-group">
 						<label for="Capacité" class="text-brand-primary mt-2">Capacité :</label>
-						<input type="number" class="w-100 form-control form-control-sm" placeholder="ex. 32Wh">
+						<input name="capacité" type="number" class="w-100 form-control form-control-sm" placeholder="ex. 32Wh">
 					</div>
 					<div class="text-center my-3">
-						<button class="btn btn-secondary bg-brand-primary btn-sm px-3 " type="button" id="addMarker"
-							alt="bouton ajouter">Ajouter</button>
-					</div>
+            <button class="btn btn-secondary bg-brand-primary btn-sm px-3 " type="submit" id="addMarker"
+              alt="bouton ajouter">Ajouter</button>
+          </div>
 				</div>
+        
 			</form>
 		</div>
 
