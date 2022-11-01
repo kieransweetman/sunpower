@@ -27,7 +27,7 @@
     ></script>
 
     <link rel="stylesheet" href="../style.css" />
-    <script src="../dist/main.js" defer></script>
+    <script src="../dist/main.bundle.js" defer></script>
     <title>À propos</title>
   </head>
   <body>
@@ -36,28 +36,43 @@
       <section class="p-4">
         <div class="vh-75 d-lg-flex flex-column justify-content-center align-items-center mb-lg-5 pb-lg-5">
           <h2 class="text-uppercase text-brand-primary fw-bolder">la société</h2>
-          <p class="fs-8 text-shadow text-brand-primary">
+          <p class="fs-8 text-shadow">
             <span class="text-brand-primary">Fondée en 2013</span>, notre société Sunpower est basée à Grenoble. <br />
             Son capital est de 10 millions d’euros.
           </p>
         </div>
-        <div class="vh-75 d-lg-flex flex-column justify-content-lg-evenly">
+        <div class="vh-75 d-lg-flex flex-column justify-content-lg-evenly mt-5">
           <h2 class="text-uppercase text-brand-primary fw-bolder">Les fondateurs</h2>
-          <div class="mt-5 col-lg-8 mx-auto">
+          <div
+            class="mt-5 col-lg-8 mx-auto"
+            data-aos="fade-left"
+            data-aos-delay="600"
+            data-aos-anchor-placement="bottom-bottom"
+          >
             <img class="float-start" id="serge" src="" alt="Serge turing" />
             <h3 class="text-lg-end text-shadow text-brand-primary">Serge Turing</h3>
             <p class="text-lg-end">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
             </p>
           </div>
-          <div class="mt-5 col-lg-8 mx-auto">
+          <div
+            class="mt-5 col-lg-8 mx-auto"
+            data-aos="fade-right"
+            data-aos-delay="600"
+            data-aos-anchor-placement="bottom-bottom"
+          >
             <img class="float-end" id="hugo" src="" alt="Hugo Oppenheimer" />
             <h3 class="text-lg-start text-shadow text-brand-primary">Hugo Oppenheimer</h3>
             <p class="text-lg-start">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
             </p>
           </div>
-          <div class="mt-5 col-lg-8 mx-auto">
+          <div
+            class="mt-5 col-lg-8 mx-auto"
+            data-aos="fade-left"
+            data-aos-delay="600"
+            data-aos-anchor-placement="bottom-bottom"
+          >
             <img class="float-start" id="alex" src="" alt="Alex Pareneinstein" />
             <h3 class="text-lg-end text-shadow text-brand-primary">Alex Pareneinstein</h3>
             <p class="text-lg-end">
@@ -68,23 +83,51 @@
       </section>
       <section id="#Historique" class="grid gap-5 row p-3 text-uppercase text-brand-primary">
         <h2>Historique</h2>
-        <div class="mx-auto col-lg-3 bg-light py-3 rounded">
+        <div class="mx-auto col-lg-3 bg-transparent py-3 rounded">
           <img src="../media/svg/people_group.svg" alt=" group of people" />
           <p>Nos Collaborateurs</p>
 
           <div class="p-3 grid">
-            <img class="img-fluid w-25" src="../media/ademe.gif" alt="" />
-            <img class="img-fluid w-25" src="../media/cea.gif" alt="" />
-            <img class="img-fluid w-25" src="../media/ines.gif" alt="" />
+            <img
+              class="img-fluid w-25"
+              data-aos="flip-up"
+              data-aos-anchor-placement="center-center"
+              src="../media/ademe.gif"
+              alt=""
+            />
+            <img
+              class="img-fluid w-25"
+              data-aos="flip-up"
+              data-aos-anchor-placement="center-center"
+              src="../media/cea.gif"
+              alt=""
+            />
+            <img
+              class="img-fluid w-25"
+              data-aos="flip-up"
+              data-aos-anchor-placement="center-center"
+              src="../media/ines.gif"
+              alt=""
+            />
             <img
               class="img-fluid w-25 mt-3"
               src="../media/photos/1024px-Logo_Montpellier_Méditerranée_Métropole.png"
               alt=""
+              data-aos="flip-up"
+              data-aos-anchor-placement="center-center"
+              data-aos-delay="300"
             />
-            <img class="img-fluid w-25 mt-3" src="../media/photos/Logo_Toulouse_Metropole.png" alt="" />
+            <img
+              class="img-fluid w-25 mt-3"
+              data-aos="flip-up"
+              data-aos-anchor-placement="center-center"
+              data-aos-delay="300"
+              src="../media/photos/Logo_Toulouse_Metropole.png"
+              alt=""
+            />
           </div>
         </div>
-        <div class="mx-auto col-lg-3 bg-light py-3 rounded">
+        <div class="mx-auto col-lg-3 bg-transparent py-3 rounded">
           <img class="p-3" src="../media/svg/Vector.svg" alt="arrow" />
           <p><span class="text-brand-ternary fw-bolder">30M d'euros</span> de levés</p>
           <p>+</p>

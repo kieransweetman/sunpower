@@ -2,7 +2,6 @@ import AOS from 'aos';
 import aos from 'aos/dist/aos.css';
 import { menu, checkFounders } from './js/genericTags';
 import scrollDown from './js/scrollDown';
-import mapGen from './js/map.js';
 
 menu();
 
@@ -12,5 +11,3 @@ checkFounders();
 
 AOS.init();
 AOS.refreshHard();
-
-mapGen();
