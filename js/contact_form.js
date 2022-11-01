@@ -1,7 +1,6 @@
 import { doc } from 'prettier';
 
 export default function formObserver() {
-
   const first_form = document.querySelector('#first_form');
   const second_form = document.querySelector('#second_form');
   const third_form = document.querySelector('#third_form');
@@ -18,11 +17,11 @@ export default function formObserver() {
   const steps = document.querySelector('#steps');
   const inputs = document.querySelectorAll('input');
   const desc = document.querySelector('#ent_form_desc');
-  const not_uploaded = document.querySelector("#not_uploaded")
-  const filename = document.querySelector("#filename")
-  const uploaded = document.querySelector("#uploaded")
-  const upload = document.getElementById('ent_form_upload')
-  const red_cross = document.getElementById('red_cross')
+  const not_uploaded = document.querySelector('#not_uploaded');
+  const filename = document.querySelector('#filename');
+  const uploaded = document.querySelector('#uploaded');
+  const upload = document.getElementById('ent_form_upload');
+  const red_cross = document.getElementById('red_cross');
 
   const first_form_attr = first_form.getAttribute('class');
   const second_form_attr = second_form.getAttribute('class');
@@ -41,13 +40,12 @@ export default function formObserver() {
   console.log(upload.value);
 
   window.onresize = () => {
-    if (window.innerWidth >= 992){
+    if (window.innerWidth >= 992) {
       location.reload();
     }
-  }
+  };
 
   if (window.innerWidth < 992) {
-
     second_form.setAttribute('class', 'hide');
     second_form_btn.setAttribute('class', 'hide');
     second_step.setAttribute('class', 'hide');
@@ -167,7 +165,7 @@ export default function formObserver() {
     }
   });
   third_form_btn.addEventListener('click', (e) => {
-    if(e.target.getAttribute('alt') === 'back'){
+    if (e.target.getAttribute('alt') === 'back') {
       third_back();
     } else {
       voidCheck();
@@ -175,24 +173,24 @@ export default function formObserver() {
   });
 
   const upload_show = () => {
-    if (upload.value !== ""){
-      not_uploaded.setAttribute("class", "hide")
-      uploaded.setAttribute("class", uploaded_attr)
+    if (upload.value !== '') {
+      not_uploaded.setAttribute('class', 'hide');
+      uploaded.setAttribute('class', uploaded_attr);
       filename.textContent = upload.value;
     } else {
-      uploaded.setAttribute("class", "hide")
-      not_uploaded.setAttribute("class", not_uploaded_attr)
+      uploaded.setAttribute('class', 'hide');
+      not_uploaded.setAttribute('class', not_uploaded_attr);
     }
-  }
+  };
 
   upload_show();
 
   upload.onchange = () => {
     upload_show();
-  }
+  };
 
   red_cross.onclick = () => {
-    upload.value = "";
+    upload.value = '';
     upload_show();
   };
 }

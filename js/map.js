@@ -4,9 +4,8 @@ import marker_icon from 'leaflet/dist/images/marker-icon.png';
 import marker_shadow from 'leaflet/dist/images/marker-shadow.png';
 
 export default function mapGen() {
-  const location = window.location.pathname;
 
-  if (location != '/pages/map.html') {
+  if (location.pathname.includes('/pages/map.html') === false) {
     return;
   }
 
