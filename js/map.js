@@ -4,7 +4,6 @@ import marker_icon from 'leaflet/dist/images/marker-icon.png';
 import marker_shadow from 'leaflet/dist/images/marker-shadow.png';
 import custom_marker from '../media/custom_marker.png';
 
-
 const map = L.map('map').setView([43.610769, 3.876716], 12);
 
 let locations = [
@@ -31,11 +30,10 @@ const c_m = L.icon({
   iconUrl: custom_marker,
   shadowUrl: marker_shadow,
 
-  iconSize:     [75, 75]
-})
+  iconSize: [75, 75],
+});
 
 function mapGen() {
-
   //API key
   const key = 'nJIl5Oa0J3EjlFmBVxci';
 
@@ -55,7 +53,7 @@ function mapGen() {
     setTimeout(() => {
       let marker = new L.marker([locations[i][1], locations[i][2]], { icon: m }).bindPopup(locations[i][0]);
       marker.addTo(map);
-    }, i*200)
+    }, i * 200);
   }
 }
 
@@ -68,7 +66,6 @@ function addMarker(lat, long, client, ombr, capacité) {
 mapGen();
 
 if (location.includes('/pages/map.html')) {
-
   let button = document.querySelector('button[type=submit]');
 
   button.addEventListener('click', (event) => {

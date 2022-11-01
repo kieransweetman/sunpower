@@ -10,10 +10,10 @@ import serge from '../media/photos/serge.png';
 const location = window.location.pathname;
 let rootFolder;
 
-if (location.includes("index.html")){
-  rootFolder = location.slice(0,location.lastIndexOf("/"));
+if (location.includes('index.html')) {
+  rootFolder = location.slice(0, location.lastIndexOf('/'));
 } else {
-  rootFolder = ".."
+  rootFolder = '..';
 }
 
 console.log(rootFolder);
