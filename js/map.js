@@ -2,6 +2,8 @@ import L from 'leaflet';
 import 'leaflet/dist/leaflet.css';
 import marker_icon from 'leaflet/dist/images/marker-icon.png';
 import marker_shadow from 'leaflet/dist/images/marker-shadow.png';
+import custom_marker from '../media/custom_marker.png';
+
 
 const map = L.map('map').setView([43.610769, 3.876716], 12);
 
@@ -25,12 +27,14 @@ const m = L.icon({
   shadowUrl: marker_shadow,
 });
 
-function mapGen() {
-  const location = window.location.pathname;
+const c_m = L.icon({
+  iconUrl: custom_marker,
+  shadowUrl: marker_shadow,
 
-  if (location.includes('/pages/map.html') === false) {
-    return;
-  }
+  iconSize:     [75, 75]
+})
+
+function mapGen() {
 
   //API key
   const key = 'nJIl5Oa0J3EjlFmBVxci';
@@ -51,29 +55,31 @@ function mapGen() {
     setTimeout(() => {
       let marker = new L.marker([locations[i][1], locations[i][2]], { icon: m }).bindPopup(locations[i][0]);
       marker.addTo(map);
-      console.log(marker);
     }, i*200)
   }
 }
 
 function addMarker(lat, long, client, ombr, capacité) {
   let info = `Client: ${client} <br> Nombre d'ombrelles: ${ombr} <br> Capacité: ${capacité} Wh`;
-  let marker = new L.marker([lat, long], { icon: m }).bindPopup(info);
+  let marker = new L.marker([lat, long], { icon: c_m }).bindPopup(info);
   marker.addTo(map);
 }
 
 mapGen();
 
-let button = document.querySelector('button[type=submit]');
+if (location.includes('/pages/map.html')) {
 
-button.addEventListener('click', (event) => {
-  event.preventDefault();
+  let button = document.querySelector('button[type=submit]');
 
-  const ombrières = document.querySelector('input[name=ombrières]').value;
-  const capacité = document.querySelector('input[name=capacité]').value;
-  const client = document.querySelector('input[name=client]').value;
-  const lat = document.querySelector('input[name=lat]').value;
-  const long = document.querySelector('input[name=long]').value;
+  button.addEventListener('click', (event) => {
+    event.preventDefault();
 
-  addMarker(lat, long, client, ombrières, capacité);
-});
+    const ombrières = document.querySelector('input[name=ombrières]').value;
+    const capacité = document.querySelector('input[name=capacité]').value;
+    const client = document.querySelector('input[name=client]').value;
+    const lat = document.querySelector('input[name=lat]').value;
+    const long = document.querySelector('input[name=long]').value;
+
+    addMarker(lat, long, client, ombrières, capacité);
+  });
+}
