@@ -29,6 +29,7 @@
     <link href="../css/contact_form.css" rel="stylesheet" />
     <link rel="stylesheet" href="../style.css" />
     <script defer src="../dist/main.bundle.js"></script>
+    <script src="https://unpkg.com/just-validate@latest/dist/just-validate.production.min.js"></script>
 
     <title>Page d'accueil</title>
   </head>
@@ -77,76 +78,114 @@
             id="contact_form"
             action="contact_ent_form.html"
             method="get"
-            class="d-flex flex-column w-100 p-2 rounded-5 bg-brand-secondary p-4 mb-5"
+            class="d-flex flex-column w-100 p-2 rounded-5 bg-brand-secondary p-4 mb-5 position-relative"
+            novalidate
           >
             <div id="first_form" class="d-flex flex-column ent_form_page_form">
-              <label for="ent_form_name">Prénom</label
-              ><input
-                class="bg-brand-secondary_40 border-top-0 border-start-0 border-end-0 border-dark"
-                id="ent_form_name"
-                name="name"
-                placeholder="ex. John"
-                type="text"
-              />
-              <label for="ent_form_lastname">Nom</label
-              ><input
-                class="bg-brand-secondary_40 border-top-0 border-start-0 border-end-0 border-dark"
-                id="ent_form_lastname"
-                name="lastname"
-                placeholder="ex. Wick"
-                type="text"
-              />
-              <label for="ent_form_email">Email</label
-              ><input
-                class="bg-brand-secondary_40 border-top-0 border-start-0 border-end-0 border-dark mb-2"
-                id="ent_form_email"
-                name="email"
-                placeholder="ex. john.doe@gmail.com"
-                type="text"
-              />
+              <div class="d-flex flex-column">
+                <label for="ent_form_name">Prénom</label
+                ><input
+                  class="bg-brand-secondary_40 border-top-0 border-start-0 border-end-0 border-dark form_control"
+                  id="ent_form_name"
+                  name="name"
+                  placeholder="ex. John"
+                  type="text"
+                  required
+                />
+              </div>
+              <div class="d-flex flex-column">
+                <label for="ent_form_lastname">Nom</label
+                ><input
+                  class="bg-brand-secondary_40 border-top-0 border-start-0 border-end-0 border-dark"
+                  id="ent_form_lastname"
+                  name="lastname"
+                  placeholder="ex. Wick"
+                  type="text"
+                  required
+                />
+              </div>
+              <div class="d-flex flex-column">
+                <label for="ent_form_email">Email</label
+                ><input
+                  class="bg-brand-secondary_40 border-top-0 border-start-0 border-end-0 border-dark mb-2"
+                  id="ent_form_email"
+                  name="email"
+                  placeholder="ex. john.doe@gmail.com"
+                  type="text"
+                  required
+                />
+              </div>
+              <div id="first_form_btn" class="d-inline-flex align-items-center d-lg-none mx-auto my-auto">
+                <span class="text-center" href="#"><img alt="" class="my-4" src="../media/svg/next_button.svg" /></span>
+              </div>
             </div>
+
             <div id="second_form" class="d-flex flex-column ent_form_page_form">
-              <label for="ent_form_adress">Adresse</label
-              ><input
-                class="bg-brand-secondary_40 border-top-0 border-start-0 border-end-0 border-dark"
-                id="ent_form_adress"
-                name="adress"
-                placeholder="ex. rue Hôtel de ville"
-                type="text"
-              />
-              <label for="ent_form_pc">Code Postal</label
-              ><input
-                class="bg-brand-secondary_40 border-top-0 border-start-0 border-end-0 border-dark"
-                id="ent_form_pc"
-                name="pc"
-                placeholder="ex. 44000"
-                type="text"
-              />
-              <label for="ent_form_city">Ville</label
-              ><input
-                class="bg-brand-secondary_40 border-top-0 border-start-0 border-end-0 border-dark"
-                id="ent_form_city"
-                name="city"
-                placeholder="ex. Montpellier"
-                type="text"
-              />
-              <label for="ent_form_phone">Téléphone</label
-              ><input
-                class="bg-brand-secondary_40 border-top-0 border-start-0 border-end-0 border-dark mb-2"
-                id="ent_form_phone"
-                name="phone"
-                placeholder="ex. +33 1 23 45 67 89"
-                type="text"
-              />
+              <div class="d-flex flex-column">
+                <label for="ent_form_adress">Adresse</label
+                ><input
+                  class="bg-brand-secondary_40 border-top-0 border-start-0 border-end-0 border-dark"
+                  id="ent_form_adress"
+                  name="adress"
+                  placeholder="ex. rue Hôtel de ville"
+                  type="text"
+                  required
+                />
+              </div>
+              <div class="d-flex flex-column">
+                <label for="ent_form_pc">Code Postal</label
+                ><input
+                  class="bg-brand-secondary_40 border-top-0 border-start-0 border-end-0 border-dark"
+                  id="ent_form_pc"
+                  name="pc"
+                  placeholder="ex. 44000"
+                  type="number"
+                  required
+                />
+              </div>
+              <div class="d-flex flex-column">
+                <label for="ent_form_city">Ville</label
+                ><input
+                  class="bg-brand-secondary_40 border-top-0 border-start-0 border-end-0 border-dark"
+                  id="ent_form_city"
+                  name="city"
+                  placeholder="ex. Montpellier"
+                  type="text"
+                  required
+                />
+              </div>
+              <div class="d-flex flex-column">
+                <label for="ent_form_phone">Téléphone</label
+                ><input
+                  class="bg-brand-secondary_40 border-top-0 border-start-0 border-end-0 border-dark mb-2"
+                  id="ent_form_phone"
+                  name="phone"
+                  placeholder="ex. +33 1 23 45 67 89"
+                  type="number"
+                  minlength="10"
+                  maxlength="10"
+                  required
+                />
+              </div>
+              <div id="second_form_btn" class="d-inline-flex align-items-center mx-auto d-lg-none">
+                <span class="text-center mx-4" href="#"
+                  ><img alt="back" class="my-4" src="../media/svg/back_button.svg"
+                /></span>
+                <span class="text-center mx-4" href="#"
+                  ><img alt="next" class="my-4" src="../media/svg/next_button.svg"
+                /></span>
+              </div>
             </div>
             <div id="third_form" class="d-flex flex-column ent_form_page_form">
-              <label for="ent_form_desc">Description</label
-              ><textarea
-                placeholder="ex. Installation d’ombrières solaires sur...(max 200 caractères)"
-                class="bg-brand-secondary_40 border-dark mb-3 pb-2"
-                name="desc"
-                id="ent_form_desc"
-              ></textarea>
+              <div class="d-flex flex-column">
+                <label for="ent_form_desc">Description</label
+                ><textarea
+                  placeholder="ex. Installation d’ombrières solaires sur...(max 200 caractères)"
+                  class="bg-brand-secondary_40 border-dark mb-3 pb-2"
+                  name="desc"
+                  id="ent_form_desc"
+                ></textarea>
+              </div>
               <label class="d-none" for="ent_form_upload">Fichier</label>
               <div id="upload" class="text-center border border-2 border-dark position-relative">
                 <div id="not_uploaded" class="">
@@ -165,25 +204,16 @@
                   <img id="red_cross" src="../media/svg/cross_red_circle.svg" alt="" />
                 </div>
               </div>
+              <div id="third_form_btn" class="d-inline-flex align-items-center">
+                <span class="text-center mx-4 d-lg-none" href="#"
+                  ><img alt="back" class="my-4" src="../media/svg/back_button.svg"
+                /></span>
+                <button class="bg-brand-primary col-5 border-0 text-white rounded-2 fs-3 p-2 my-5 bottom-0 mx-auto">
+                  Envoyer
+                </button>
+              </div>
             </div>
           </form>
-          <div id="first_form_btn" class="d-inline-flex align-items-center d-lg-none">
-            <span class="text-center" href="#"><img alt="" class="my-4" src="../media/svg/next_button.svg" /></span>
-          </div>
-          <div id="second_form_btn" class="d-inline-flex align-items-center d-lg-none">
-            <span class="text-center mx-4" href="#"
-              ><img alt="back" class="my-4" src="../media/svg/back_button.svg"
-            /></span>
-            <span class="text-center mx-4" href="#"
-              ><img alt="next" class="my-4" src="../media/svg/next_button.svg"
-            /></span>
-          </div>
-          <div id="third_form_btn" class="d-inline-flex align-items-center">
-            <span class="text-center mx-4 d-lg-none" href="#"
-              ><img alt="back" class="my-4" src="../media/svg/back_button.svg"
-            /></span>
-            <button class="h-100 bg-brand-primary border-0 text-white rounded-2 fs-3 p-2 mx-4">Envoyer</button>
-          </div>
         </div>
         <div
           id="ent_resume"
@@ -192,5 +222,70 @@
       </div>
     </main>
     <!--End de la main page -->
+    <script>
+      const validation = new JustValidate('#contact_form');
+
+      validation
+        .addField('#ent_form_name', [
+          {
+            rule: 'required',
+            errorMessage: 'prénom requis',
+          },
+        ])
+        .addField('#ent_form_lastname', [
+          {
+            rule: 'required',
+            errorMessage: 'nom requis',
+          },
+        ])
+        // .addField('#ent_form_ent_name', [
+        //   {
+        //     rule: 'required',
+        //     errorMessage: "nom de l'entrepise requis",
+        //   },
+        // ])
+        .addField('#ent_form_email', [
+          {
+            rule: 'required',
+            errorMessage: 'email requis',
+          },
+          {
+            rule: 'email',
+            errorMessage: "format de email n'est pas valide",
+          },
+        ])
+        .addField('#ent_form_adress', [
+          {
+            rule: 'required',
+            errorMessage: 'adresse requise',
+          },
+        ])
+        .addField('#ent_form_pc', [
+          {
+            rule: 'required',
+            errorMessage: 'code postal requis',
+          },
+          {
+            rule: 'number',
+            errorMessage: 'code postal non valide',
+          },
+        ])
+        .addField('#ent_form_city', [
+          {
+            rule: 'required',
+            errorMessage: 'ville requise',
+          },
+        ])
+        .addField('#ent_form_phone', [
+          {
+            rule: 'required',
+            errorMessage: 'téléphone requis',
+          },
+          {
+            rule: 'number',
+            errorMessage: 'numero requis',
+          },
+        ]);
+    </script>
   </body>
 </html>
