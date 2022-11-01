@@ -5,7 +5,9 @@ import scrollDown from './js/scrollDown';
 import mapGen from './js/map.js';
 
 menu();
+
 scrollDown();
+
 checkFounders();
 
 AOS.init();

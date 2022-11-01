@@ -5,8 +5,9 @@ import marker_shadow from 'leaflet/dist/images/marker-shadow.png';
 
 export default function mapGen() {
   const location = window.location.pathname;
-  if (location === '/pages/map.html') {
-    console.log(location);
+
+  if (location != '/pages/map.html') {
+    return;
   }
 
   let locations = [
