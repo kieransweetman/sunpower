@@ -33,38 +33,41 @@
   </head>
 
   <body>
+    <div class="container">
     <div class="title_map text-center text-brand-primary fw-bolder text-shadow fs-7 mb-0 py-4">
       Retrouvez les localisations de nos ombrières
     </div>
     <form action="">
       <div class="row">
         <div class="col">
-          <input name="lat" type="text" class="form-control" placeholder="First name" aria-label="First name" />
+          <input name="lat" type="text" class="form-control" placeholder="Latitude" aria-label="Latitude" />
         </div>
         <div class="col">
-          <input name="long" type="text" class="form-control" placeholder="Last name" aria-label="Last name" />
+          <input name="long" type="text" class="form-control" placeholder="Longitude" aria-label="Longitude" />
         </div>
         <div class="col">
-          <input name="client" type="text" class="form-control" placeholder="First name" aria-label="First name" />
+          <input name="client" type="text" class="form-control" placeholder="Client" aria-label="Client" />
         </div>
         <div class="col">
-          <input name="ombrières" type="text" class="form-control" placeholder="Last name" aria-label="Last name" />
+          <input name="ombrières" type="text" class="form-control" placeholder="Ombrière" aria-label="Ombrière" />
         </div>
         <div class="col">
-          <input name="capacité" type="text" class="form-control" placeholder="Last name" aria-label="Last name" />
+          <input name="capacité" type="text" class="form-control" placeholder="Capacité" aria-label="Capacité" />
         </div>
       </div>
-      <button type="submit">submit</button>
+      <button type="submit">Envoyer</button>
     </form>
 
     <div id="map" style="height: 85vh">
       <a href="https://www.maptiler.com" style="position: flex"
         ><img src="https://api.maptiler.com/resources/logo.svg" alt="MapTiler logo"
       /></a>
-    </div>
-    <p>
+      <p>
       <a href="https://www.maptiler.com/copyright/" target="_blank">&copy; MapTiler</a>
       <a href="https://www.openstreetmap.org/copyright" target="_blank">&copy; OpenStreetMap contributors</a>
     </p>
+    </div>
+    
+    </div>
   </body>
 </html>
