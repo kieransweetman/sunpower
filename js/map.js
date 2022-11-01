@@ -28,7 +28,7 @@ const m = L.icon({
 function mapGen() {
   const location = window.location.pathname;
 
-  if (location.pathname.includes('/pages/map.html') === false) {
+  if (location.includes('/pages/map.html') === false) {
     return;
   }
 
@@ -48,9 +48,11 @@ function mapGen() {
   }).addTo(map);
 
   for (let i = 0; i < locations.length; i++) {
-    let marker = new L.marker([locations[i][1], locations[i][2]], { icon: m }).bindPopup(locations[i][0]);
-    marker.addTo(map);
-    console.log(marker);
+    setTimeout(() => {
+      let marker = new L.marker([locations[i][1], locations[i][2]], { icon: m }).bindPopup(locations[i][0]);
+      marker.addTo(map);
+      console.log(marker);
+    }, i*200)
   }
 }
 
