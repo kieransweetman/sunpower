@@ -5,7 +5,7 @@ import marker_shadow from 'leaflet/dist/images/marker-shadow.png';
 import custom_marker from '../media/custom_marker.png';
 
 const map = L.map('map').setView([43.610769, 3.876716], 12);
-
+const location = window.location.pathname;
 let locations = [
   ["Client: Pradeo<br>Nombre d'ombrelles: 3<br>Capacité: 12 Wh", 43.567044, 3.943067],
   ["Client: Greenx<br>Nombre d'ombrelles: 7 <br> Capacité: 23 Wh", 43.57119189294555, 3.944850180592113],
@@ -65,6 +65,8 @@ function addMarker(lat, long, client, ombr, capacité) {
 
 mapGen();
 
+const show_form = document.querySelector('#show_button');
+
 if (location.includes('/pages/map.html')) {
   let button = document.querySelector('button[type=submit]');
 
@@ -80,3 +82,7 @@ if (location.includes('/pages/map.html')) {
     addMarker(lat, long, client, ombrières, capacité);
   });
 }
+
+show_form.addEventListener('click', () => {
+  document.querySelector('#mapForm').classList.toggle('collapse');
+});

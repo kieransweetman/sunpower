@@ -1,86 +1,105 @@
 <!DOCTYPE html>
 <html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<head>
-	<meta charset="UTF-8" />
-	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- bootstrap -->
 
-	<!-- bootstrap -->
+    <!-- icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css" />
 
-	<!-- icons -->
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css" />
+    <!-- css -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      crossorigin="anonymous"
+    />
 
-	<!-- css -->
-	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
-		integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous" />
+    <!-- js -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+      crossorigin="anonymous"
+      defer
+    ></script>
 
-	<!-- js -->
-	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
-		integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"
-		defer></script>
+    <link rel="stylesheet" href="../style.css" />
+    <script src="../dist/main.bundle.js" defer></script>
+    <script src="../dist/map.bundle.js" defer></script>
+    <title>Carte interactive</title>
+  </head>
 
-	<link rel="stylesheet" href="../style.css" />
-	<script src="../dist/main.bundle.js" defer></script>
-	<script src="../dist/map.bundle.js" defer></script>
-	<title>Carte interactive</title>
-</head>
-
-<body>
-	<div class="container">
-		<div class="title_map text-center text-brand-primary fw-bolder text-shadow fs-7 mb-0 py-4">
-			Retrouvez les localisations de nos ombrières
-		</div>
-		<div class="px-3">
-			<form action="">
-				<div class="text-center w-100">
-					<button class="btn btn-secondary btn-block bg-brand-primary btn-sm px-3" type="button"
-						data-bs-toggle="collapse"
-						onclick="document.querySelector('#mapForm').classList.toggle('collapse')" id="button" alt="bouton pour ajouter les
+  <body>
+    <div class="container">
+      <div class="title_map text-center text-brand-primary fw-bolder text-shadow fs-7 mb-0 py-4">
+        Retrouvez les localisations de nos ombrières
+      </div>
+      <div class="px-3">
+        <form action="">
+          <div class="text-center w-100">
+            <button
+              class="btn btn-secondary btn-block bg-brand-primary btn-sm px-3 mb-3"
+              type="button"
+              id="show_button"
+              alt="bouton pour ajouter les
 				ombrières
-				solaires sur la carte">Ajouter les
-						ombrières
-						solaires</button>
-				</div>
-				<div class="collapse col-lg-6 mx-auto" id="mapForm">
-					<div class="form-group">
-						<label for="client" class="text-brand-primary mt-3">Client :</label>
-						<input type="string" class="w-100 form-control form-control-sm"
-							placeholder="ex. FlowerPower SA">
-					</div>
-					<div class="form-group">
-						<label for="latitude" class="text-brand-primary mt-2">Latitude :</label>
-						<input type="number" class="w-100 form-control form-control-sm" placeholder="ex. 43.458">
-					</div>
-					<div class="form-group">
-						<label for="longitude" class="text-brand-primary mt-2">Longitude :</label>
-						<input type="number" class="w-100 form-control form-control-sm" placeholder="ex. 3.256">
-					</div>
-					<div class="form-group">
-						<label for="nombreOmbrelles" class="text-brand-primary mt-2">Nombre d'ombrelles :</label>
-						<input type="number" class="w-100 form-control form-control-sm" placeholder="ex. 6">
-					</div>
-					<div class="form-group">
-						<label for="Capacité" class="text-brand-primary mt-2">Capacité :</label>
-						<input type="number" class="w-100 form-control form-control-sm" placeholder="ex. 32Wh">
-					</div>
-					<div class="text-center my-3">
-						<button class="btn btn-secondary bg-brand-primary btn-sm px-3 " type="button" id="addMarker"
-							alt="bouton ajouter">Ajouter</button>
-					</div>
-				</div>
-			</form>
-		</div>
+				solaires sur la carte"
+            >
+              Ajouter un point
+            </button>
+          </div>
+          <div class="collapse col-lg-6 mx-auto" id="mapForm">
+            <div class="form-group">
+              <label for="client" class="text-brand-primary mt-3">Client :</label>
+              <input
+                name="client"
+                type="string"
+                class="w-100 form-control form-control-sm"
+                placeholder="ex. FlowerPower SA"
+              />
+            </div>
+            <div class="form-group">
+              <label for="latitude" class="text-brand-primary mt-2">Latitude :</label>
+              <input name="lat" type="number" class="w-100 form-control form-control-sm" placeholder="ex. 43.458" />
+            </div>
+            <div class="form-group">
+              <label for="longitude" class="text-brand-primary mt-2">Longitude :</label>
+              <input name="long" type="number" class="w-100 form-control form-control-sm" placeholder="ex. 3.256" />
+            </div>
+            <div class="form-group">
+              <label for="nombreOmbrelles" class="text-brand-primary mt-2">Nombre d'ombrelles :</label>
+              <input name="ombrières" type="number" class="w-100 form-control form-control-sm" placeholder="ex. 6" />
+            </div>
+            <div class="form-group">
+              <label for="Capacité" class="text-brand-primary mt-2">Capacité :</label>
+              <input name="capacité" type="number" class="w-100 form-control form-control-sm" placeholder="ex. 32Wh" />
+            </div>
+            <div class="text-center my-3">
+              <button
+                class="btn btn-secondary bg-brand-primary btn-sm px-3"
+                type="submit"
+                id="addMarker"
+                alt="bouton ajouter"
+              >
+                Ajouter
+              </button>
+            </div>
+          </div>
+        </form>
+      </div>
 
-		<div id="map" style="height: 85vh">
-			<a href="https://www.maptiler.com" style="position: flex"><img
-					src="https://api.maptiler.com/resources/logo.svg" alt="MapTiler logo" /></a>
-		</div>
-		<p>
-			<a href="https://www.maptiler.com/copyright/" target="_blank">&copy; MapTiler</a>
-			<a href="https://www.openstreetmap.org/copyright" target="_blank">&copy; OpenStreetMap contributors</a>
-		</p>
-	</div>
-</body>
-
+      <div id="map" style="height: 85vh">
+        <a href="https://www.maptiler.com" style="position: flex"
+          ><img src="https://api.maptiler.com/resources/logo.svg" alt="MapTiler logo"
+        /></a>
+      </div>
+      <p>
+        <a href="https://www.maptiler.com/copyright/" target="_blank">&copy; MapTiler</a>
+        <a href="https://www.openstreetmap.org/copyright" target="_blank">&copy; OpenStreetMap contributors</a>
+      </p>
+    </div>
+  </body>
 </html>
