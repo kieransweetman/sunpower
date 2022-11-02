@@ -1,5 +1,3 @@
-import { doc } from 'prettier';
-
 export default function formObserver() {
   const first_form = document.querySelector('#first_form');
   const second_form = document.querySelector('#second_form');
